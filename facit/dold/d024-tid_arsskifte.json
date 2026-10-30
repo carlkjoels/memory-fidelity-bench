@@ -1,0 +1,27 @@
+{
+  "id": "d024-tid_arsskifte",
+  "sprak": "sv",
+  "kategori": "tid_årsskifte",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "Jag slutade röka på nyårsnatten, så nu har det gått snart ett år."
+    },
+    {
+      "roll": "assistant",
+      "text": "Imponerande!"
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "Jag slutade röka på nyårsnatten",
+      "typ": "handelse",
+      "polaritet": "bekraftad",
+      "modalitet": "faktisk",
+      "tid": "2025-12-31",
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": []
+}

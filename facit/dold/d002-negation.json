@@ -1,0 +1,40 @@
+{
+  "id": "d002-negation",
+  "sprak": "en",
+  "kategori": "negation",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "I don't work on Fridays anymore, but I still answer email then."
+    },
+    {
+      "roll": "assistant",
+      "text": "Understood."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "I don't work on Fridays anymore",
+      "typ": "sjalvbild",
+      "polaritet": "negerad",
+      "modalitet": "faktisk",
+      "tid": null,
+      "talare": "user"
+    },
+    {
+      "citat": "I still answer email then",
+      "typ": "handelse",
+      "polaritet": "bekraftad",
+      "modalitet": "faktisk",
+      "tid": null,
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": [
+    {
+      "amne": "works on Fridays",
+      "skal": "negated statement must not be stored as a confirmed fact"
+    }
+  ]
+}

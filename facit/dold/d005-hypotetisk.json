@@ -1,0 +1,23 @@
+{
+  "id": "d005-hypotetisk",
+  "sprak": "en",
+  "kategori": "hypotetisk",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "If I were braver I'd quit my job and start a bakery."
+    },
+    {
+      "roll": "assistant",
+      "text": "Bakeries are hard work but rewarding."
+    }
+  ],
+  "ska_sparas": [],
+  "ska_ej_sparas": [
+    {
+      "amne": "quit job and start a bakery",
+      "skal": "counterfactual 'if I were' — not a real intention or event"
+    }
+  ]
+}

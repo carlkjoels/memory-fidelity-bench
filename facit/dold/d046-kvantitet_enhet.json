@@ -1,0 +1,35 @@
+{
+  "id": "d046-kvantitet_enhet",
+  "sprak": "sv",
+  "kategori": "kvantitet_enhet",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "Jag gick 8000 steg igår och drack 2 glas vatten till middagen."
+    },
+    {
+      "roll": "assistant",
+      "text": "Bra jobbat."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "Jag gick 8000 steg igår",
+      "typ": "handelse",
+      "polaritet": "bekraftad",
+      "modalitet": "faktisk",
+      "tid": "2026-10-29",
+      "talare": "user"
+    },
+    {
+      "citat": "drack 2 glas vatten till middagen",
+      "typ": "handelse",
+      "polaritet": "bekraftad",
+      "modalitet": "faktisk",
+      "tid": "2026-10-29",
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": []
+}

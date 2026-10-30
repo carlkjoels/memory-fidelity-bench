@@ -1,0 +1,35 @@
+{
+  "id": "d047-kvantitet_enhet",
+  "sprak": "en",
+  "kategori": "kvantitet_enhet",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "I ran 10 km this morning and my resting heart rate was 58 bpm."
+    },
+    {
+      "roll": "assistant",
+      "text": "Solid numbers."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "I ran 10 km this morning",
+      "typ": "handelse",
+      "polaritet": "bekraftad",
+      "modalitet": "faktisk",
+      "tid": "2026-10-30",
+      "talare": "user"
+    },
+    {
+      "citat": "my resting heart rate was 58 bpm",
+      "typ": "handelse",
+      "polaritet": "bekraftad",
+      "modalitet": "faktisk",
+      "tid": "2026-10-30",
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": []
+}

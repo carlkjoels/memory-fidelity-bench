@@ -1,0 +1,32 @@
+{
+  "id": "d007-avsikt",
+  "sprak": "sv",
+  "kategori": "avsikt",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "Jag tänker börja springa tre gånger i veckan från och med nästa månad."
+    },
+    {
+      "roll": "assistant",
+      "text": "Bra målsättning."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "Jag tänker börja springa tre gånger i veckan",
+      "typ": "intention",
+      "polaritet": "bekraftad",
+      "modalitet": "avsedd",
+      "tid": null,
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": [
+    {
+      "amne": "springer redan",
+      "skal": "det är en avsikt, inte en faktisk vana ännu"
+    }
+  ]
+}

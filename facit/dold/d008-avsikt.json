@@ -1,0 +1,32 @@
+{
+  "id": "d008-avsikt",
+  "sprak": "en",
+  "kategori": "avsikt",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "I'm planning to learn Spanish before our trip to Madrid."
+    },
+    {
+      "roll": "assistant",
+      "text": "Sounds like a good plan."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "I'm planning to learn Spanish before our trip to Madrid",
+      "typ": "intention",
+      "polaritet": "bekraftad",
+      "modalitet": "avsedd",
+      "tid": null,
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": [
+    {
+      "amne": "speaks Spanish",
+      "skal": "stated as a plan, not an accomplished fact"
+    }
+  ]
+}

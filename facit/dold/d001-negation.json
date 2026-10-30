@@ -1,0 +1,40 @@
+{
+  "id": "d001-negation",
+  "sprak": "sv",
+  "kategori": "negation",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "Jag dricker inte kaffe längre, bytte till te i somras."
+    },
+    {
+      "roll": "assistant",
+      "text": "Okej, bra att veta."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "bytte till te i somras",
+      "typ": "handelse",
+      "polaritet": "bekraftad",
+      "modalitet": "faktisk",
+      "tid": null,
+      "talare": "user"
+    },
+    {
+      "citat": "Jag dricker inte kaffe längre",
+      "typ": "sjalvbild",
+      "polaritet": "negerad",
+      "modalitet": "faktisk",
+      "tid": null,
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": [
+    {
+      "amne": "dricker kaffe",
+      "skal": "negerad utsaga får inte sparas som bekräftad vana"
+    }
+  ]
+}

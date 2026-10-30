@@ -1,0 +1,32 @@
+{
+  "id": "d010-annans_rost",
+  "sprak": "sv",
+  "kategori": "annans_röst",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "Min läkare sa att jag borde sova mer, minst sju timmar."
+    },
+    {
+      "roll": "assistant",
+      "text": "Sömn är viktigt."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "Min läkare sa att jag borde sova mer, minst sju timmar",
+      "typ": "handelse",
+      "polaritet": "bekraftad",
+      "modalitet": "annans_rost",
+      "tid": null,
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": [
+    {
+      "amne": "användaren sover sju timmar",
+      "skal": "det är läkarens rekommendation, inte användarens egen vana eller avsikt"
+    }
+  ]
+}

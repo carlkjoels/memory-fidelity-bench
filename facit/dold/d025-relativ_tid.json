@@ -1,0 +1,35 @@
+{
+  "id": "d025-relativ_tid",
+  "sprak": "sv",
+  "kategori": "relativ_tid",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "Jag var hos tandläkaren i tisdags och fick en ny tid om två veckor."
+    },
+    {
+      "roll": "assistant",
+      "text": "Bra att det är inbokat."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "Jag var hos tandläkaren i tisdags",
+      "typ": "handelse",
+      "polaritet": "bekraftad",
+      "modalitet": "faktisk",
+      "tid": "2026-10-27",
+      "talare": "user"
+    },
+    {
+      "citat": "fick en ny tid om två veckor",
+      "typ": "handelse",
+      "polaritet": "bekraftad",
+      "modalitet": "avsedd",
+      "tid": "2026-11-13",
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": []
+}

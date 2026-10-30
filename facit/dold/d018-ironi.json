@@ -1,0 +1,32 @@
+{
+  "id": "d018-ironi",
+  "sprak": "sv",
+  "kategori": "ironi",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "Toppen, chefen bokade in ett möte klockan sju på morgonen. Precis vad jag drömt om."
+    },
+    {
+      "roll": "assistant",
+      "text": "Tidiga möten är jobbiga."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "chefen bokade in ett möte klockan sju på morgonen",
+      "typ": "handelse",
+      "polaritet": "bekraftad",
+      "modalitet": "annans_rost",
+      "tid": null,
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": [
+    {
+      "amne": "användaren älskar tidiga möten",
+      "skal": "'toppen' och 'precis vad jag drömt om' är ironi"
+    }
+  ]
+}

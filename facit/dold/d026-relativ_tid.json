@@ -1,0 +1,35 @@
+{
+  "id": "d026-relativ_tid",
+  "sprak": "en",
+  "kategori": "relativ_tid",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "I started my new course last Monday and the final exam is in three weeks."
+    },
+    {
+      "roll": "assistant",
+      "text": "Good luck with it."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "I started my new course last Monday",
+      "typ": "handelse",
+      "polaritet": "bekraftad",
+      "modalitet": "faktisk",
+      "tid": "2026-10-26",
+      "talare": "user"
+    },
+    {
+      "citat": "the final exam is in three weeks",
+      "typ": "handelse",
+      "polaritet": "bekraftad",
+      "modalitet": "avsedd",
+      "tid": "2026-11-20",
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": []
+}

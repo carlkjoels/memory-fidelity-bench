@@ -1,0 +1,36 @@
+{
+  "id": "d042-korrigering",
+  "sprak": "sv",
+  "kategori": "korrigering",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "Vi ska till Spanien i sommar."
+    },
+    {
+      "roll": "assistant",
+      "text": "Härligt!"
+    },
+    {
+      "roll": "user",
+      "text": "Äsch, jag sa fel, det är Italien vi ska till, inte Spanien."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "det är Italien vi ska till, inte Spanien",
+      "typ": "intention",
+      "polaritet": "bekraftad",
+      "modalitet": "avsedd",
+      "tid": null,
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": [
+    {
+      "amne": "resa till Spanien",
+      "skal": "rättad — destinationen är Italien"
+    }
+  ]
+}

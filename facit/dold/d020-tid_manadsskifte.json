@@ -1,0 +1,27 @@
+{
+  "id": "d020-tid_manadsskifte",
+  "sprak": "en",
+  "kategori": "tid_månadsskifte",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "I moved into the apartment at the end of February."
+    },
+    {
+      "roll": "assistant",
+      "text": "Hope you've settled in."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "I moved into the apartment at the end of February",
+      "typ": "handelse",
+      "polaritet": "bekraftad",
+      "modalitet": "faktisk",
+      "tid": "2026-02-28",
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": []
+}

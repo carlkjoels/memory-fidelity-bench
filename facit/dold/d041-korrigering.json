@@ -1,0 +1,36 @@
+{
+  "id": "d041-korrigering",
+  "sprak": "en",
+  "kategori": "korrigering",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "My daughter is turning seven next month."
+    },
+    {
+      "roll": "assistant",
+      "text": "How lovely."
+    },
+    {
+      "roll": "user",
+      "text": "Sorry, I meant eight, not seven."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "I meant eight, not seven",
+      "typ": "handelse",
+      "polaritet": "bekraftad",
+      "modalitet": "faktisk",
+      "tid": null,
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": [
+    {
+      "amne": "daughter turning seven",
+      "skal": "corrected — the right value is eight"
+    }
+  ]
+}

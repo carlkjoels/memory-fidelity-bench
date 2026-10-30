@@ -1,0 +1,23 @@
+{
+  "id": "d032-inget_att_spara",
+  "sprak": "en",
+  "kategori": "inget_att_spara",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "Thanks, that makes sense. Have a good one!"
+    },
+    {
+      "roll": "assistant",
+      "text": "You too!"
+    }
+  ],
+  "ska_sparas": [],
+  "ska_ej_sparas": [
+    {
+      "amne": "småprat och avsked",
+      "skal": "pure pleasantry, no durable fact about the user"
+    }
+  ]
+}
