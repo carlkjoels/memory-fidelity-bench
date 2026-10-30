@@ -1,0 +1,36 @@
+{
+  "id": "u080-motsägelse",
+  "kategori": "motsagelse",
+  "sprak": "en",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "I hate travelling."
+    },
+    {
+      "roll": "assistant",
+      "text": "Noterat."
+    },
+    {
+      "roll": "user",
+      "text": "I've actually grown to love it."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "I've actually grown to love it",
+      "typ": "sjalvbild",
+      "polaritet": "bekraftad",
+      "modalitet": "faktisk",
+      "tid": null,
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": [
+    {
+      "amne": "gammal uppgift",
+      "skal": "motsagd av senare"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "u034-annans_röst",
+  "kategori": "annans-rost",
+  "sprak": "en",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "My sister thinks I should call more often."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "My sister thinks I should call more often",
+      "typ": "handelse",
+      "polaritet": "bekraftad",
+      "modalitet": "annans_rost",
+      "tid": null,
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": [
+    {
+      "amne": "user's own view",
+      "skal": "someone else's words"
+    }
+  ]
+}

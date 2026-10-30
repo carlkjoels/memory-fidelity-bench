@@ -1,0 +1,36 @@
+{
+  "id": "u037-assistentens_ord",
+  "kategori": "assistentens-ord",
+  "sprak": "sv",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "Jag känner mig stressad."
+    },
+    {
+      "roll": "assistant",
+      "text": "Många tycker morgonpromenader hjälper."
+    },
+    {
+      "roll": "user",
+      "text": "Jaha."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "Jag känner mig stressad",
+      "typ": "sjalvbild",
+      "polaritet": "bekraftad",
+      "modalitet": "faktisk",
+      "tid": null,
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": [
+    {
+      "amne": "meditera/schema/promenad som användarens avsikt",
+      "skal": "assistentens förslag, inte användarens ord"
+    }
+  ]
+}

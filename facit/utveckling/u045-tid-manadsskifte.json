@@ -1,0 +1,28 @@
+{
+  "id": "u045-tid_månadsskifte",
+  "kategori": "tid-manadsskifte",
+  "sprak": "sv",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "Jag började jobbet första september."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "Jag började jobbet första september",
+      "typ": "handelse",
+      "polaritet": "bekraftad",
+      "modalitet": "faktisk",
+      "tid": "2026-09-01",
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": [
+    {
+      "amne": "ouppläst eller fel datum",
+      "skal": "ska lösas till 2026-09-01"
+    }
+  ]
+}

@@ -1,14 +1,28 @@
 {
-  "id": "u003-avsikt", "sprak": "sv", "kategori": "avsikt",
+  "id": "u003-avsikt",
+  "sprak": "sv",
+  "kategori": "avsikt",
   "samtalsdatum": "2026-10-30",
   "meddelanden": [
-    {"roll": "user", "text": "Jag tänker börja springa på morgnarna."}
+    {
+      "roll": "user",
+      "text": "Jag tänker börja springa på morgnarna."
+    }
   ],
   "ska_sparas": [
-    {"citat": "Jag tänker börja springa på morgnarna", "typ": "intention",
-     "polaritet": "bekraftad", "modalitet": "avsedd", "tid": null, "talare": "user"}
+    {
+      "citat": "Jag tänker börja springa på morgnarna",
+      "typ": "intention",
+      "polaritet": "bekraftad",
+      "modalitet": "avsedd",
+      "tid": null,
+      "talare": "user"
+    }
   ],
   "ska_ej_sparas": [
-    {"amne": "springer på morgnarna", "skal": "avsedd, inte faktisk — får inte sparas som vana"}
+    {
+      "amne": "springer på morgnarna",
+      "skal": "avsedd, inte faktisk — får inte sparas som vana"
+    }
   ]
 }

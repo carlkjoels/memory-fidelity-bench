@@ -1,0 +1,28 @@
+{
+  "id": "u091-kvantitet_enhet",
+  "kategori": "kvantitet-enhet",
+  "sprak": "en",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "I read about 20 pages a night, sometimes 40."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "I read about 20 pages a night",
+      "typ": "handelse",
+      "polaritet": "bekraftad",
+      "modalitet": "faktisk",
+      "tid": null,
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": [
+    {
+      "amne": "distorted number",
+      "skal": "numbers and units must stay exact"
+    }
+  ]
+}

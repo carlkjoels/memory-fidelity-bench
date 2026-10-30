@@ -4,3 +4,6 @@ __pycache__/
 .venv/
 # system-installationer hålls utanför repot
 adaptrar/*/vendor/
+
+# hidden set v2 lives outside the repo; never commit the files themselves
+facit/dold/

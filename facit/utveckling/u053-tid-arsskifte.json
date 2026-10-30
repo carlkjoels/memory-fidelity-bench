@@ -1,0 +1,28 @@
+{
+  "id": "u053-tid_årsskifte",
+  "kategori": "tid-arsskifte",
+  "sprak": "en",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "I quit smoking last New Year."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "I quit smoking last New Year",
+      "typ": "handelse",
+      "polaritet": "bekraftad",
+      "modalitet": "faktisk",
+      "tid": "2026-01-01",
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": [
+    {
+      "amne": "wrong year",
+      "skal": "resolve relative to conversation date"
+    }
+  ]
+}

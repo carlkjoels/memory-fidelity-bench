@@ -1,0 +1,28 @@
+{
+  "id": "u092-kvantitet_enhet",
+  "kategori": "kvantitet-enhet",
+  "sprak": "en",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "I spend two hours a day coding."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "I spend two hours a day coding",
+      "typ": "handelse",
+      "polaritet": "bekraftad",
+      "modalitet": "faktisk",
+      "tid": null,
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": [
+    {
+      "amne": "distorted number",
+      "skal": "numbers and units must stay exact"
+    }
+  ]
+}

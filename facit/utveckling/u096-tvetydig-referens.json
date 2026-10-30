@@ -1,0 +1,19 @@
+{
+  "id": "u096-tvetydig_referens",
+  "kategori": "tvetydig-referens",
+  "sprak": "en",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "She mentioned it, but I'm not sure who."
+    }
+  ],
+  "ska_sparas": [],
+  "ska_ej_sparas": [
+    {
+      "amne": "unclear referent",
+      "skal": "ambiguous — do not save when uncertain"
+    }
+  ]
+}

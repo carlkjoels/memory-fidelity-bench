@@ -1,14 +1,28 @@
 {
-  "id": "u006-tid-manadsskifte", "sprak": "sv", "kategori": "tid_månadsskifte",
+  "id": "u006-tid-manadsskifte",
+  "sprak": "sv",
+  "kategori": "tid-manadsskifte",
   "samtalsdatum": "2026-09-02",
   "meddelanden": [
-    {"roll": "user", "text": "Jag bytte sensor sista augusti."}
+    {
+      "roll": "user",
+      "text": "Jag bytte sensor sista augusti."
+    }
   ],
   "ska_sparas": [
-    {"citat": "Jag bytte sensor sista augusti", "typ": "handelse",
-     "polaritet": "bekraftad", "modalitet": "faktisk", "tid": "2026-08-31", "talare": "user"}
+    {
+      "citat": "Jag bytte sensor sista augusti",
+      "typ": "handelse",
+      "polaritet": "bekraftad",
+      "modalitet": "faktisk",
+      "tid": "2026-08-31",
+      "talare": "user"
+    }
   ],
   "ska_ej_sparas": [
-    {"amne": "fel datum", "skal": "'sista augusti' = 2026-08-31, aldrig 1 september eller 'augusti' ouppläst"}
+    {
+      "amne": "fel datum",
+      "skal": "'sista augusti' = 2026-08-31, aldrig 1 september eller 'augusti' ouppläst"
+    }
   ]
 }
