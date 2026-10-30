@@ -158,7 +158,7 @@ numbers.
   committed publicly (`DOLD_MANIFEST_V2.sha256`). The conversation files are
   published only AFTER the single run — so the manifest proves the set was fixed
   in advance, and publication proves it was not altered. `frys_dold.py` reads
-  from the private path.
+  from the private path. The external author follows AUTHORING-HIDDEN-V2.md.
 - 2026-10-30: Health niche added via this changelog — test conversations cover
   allergies, medications, doses, symptoms, what the doctor said and what the
   patient believes. A fourth serious error is added: **wrong medication, dose or
