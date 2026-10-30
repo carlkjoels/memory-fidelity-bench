@@ -1,0 +1,19 @@
+{
+  "id": "u018-hypotetisk",
+  "kategori": "hypotetisk",
+  "sprak": "sv",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "Hade jag mer tid skulle jag lära mig piano."
+    }
+  ],
+  "ska_sparas": [],
+  "ska_ej_sparas": [
+    {
+      "amne": "Hade jag mer tid skulle jag lära mig piano",
+      "skal": "hypotetiskt villkor, varken avsikt eller händelse"
+    }
+  ]
+}

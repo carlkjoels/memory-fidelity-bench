@@ -1,0 +1,28 @@
+{
+  "id": "u025-avsikt",
+  "kategori": "avsikt",
+  "sprak": "sv",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "Jag planerar att flytta till våren."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "Jag planerar att flytta till våren",
+      "typ": "intention",
+      "polaritet": "bekraftad",
+      "modalitet": "avsedd",
+      "tid": null,
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": [
+    {
+      "amne": "som redan gjort",
+      "skal": "avsedd, inte faktisk"
+    }
+  ]
+}

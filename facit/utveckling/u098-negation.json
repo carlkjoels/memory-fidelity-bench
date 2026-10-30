@@ -1,0 +1,28 @@
+{
+  "id": "u098-negation",
+  "kategori": "negation",
+  "sprak": "sv",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "Jag använder inte sociala medier."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "Jag använder inte sociala medier",
+      "typ": "sjalvbild",
+      "polaritet": "negerad",
+      "modalitet": "faktisk",
+      "tid": null,
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": [
+    {
+      "amne": "använder sociala medier",
+      "skal": "negerad"
+    }
+  ]
+}

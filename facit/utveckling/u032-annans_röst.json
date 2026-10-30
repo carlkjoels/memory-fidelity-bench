@@ -1,0 +1,28 @@
+{
+  "id": "u032-annans_röst",
+  "kategori": "annans_röst",
+  "sprak": "en",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "My doctor said I should rest more."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "My doctor said I should rest more",
+      "typ": "handelse",
+      "polaritet": "bekraftad",
+      "modalitet": "annans_rost",
+      "tid": null,
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": [
+    {
+      "amne": "user's own view",
+      "skal": "someone else's words"
+    }
+  ]
+}

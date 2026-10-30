@@ -1,0 +1,28 @@
+{
+  "id": "u040-ironi",
+  "kategori": "ironi",
+  "sprak": "sv",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "Toppen, tåget blev inställt igen."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "tåget blev inställt",
+      "typ": "handelse",
+      "polaritet": "bekraftad",
+      "modalitet": "faktisk",
+      "tid": null,
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": [
+    {
+      "amne": "positiv känsla",
+      "skal": "ironi — orden är positiva men betydelsen negativ"
+    }
+  ]
+}

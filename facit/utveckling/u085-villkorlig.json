@@ -1,0 +1,28 @@
+{
+  "id": "u085-villkorlig",
+  "kategori": "villkorlig",
+  "sprak": "sv",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "Om jag får tid ska jag börja renovera köket."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "Om jag får tid ska jag börja renovera köket",
+      "typ": "intention",
+      "polaritet": "bekraftad",
+      "modalitet": "avsedd",
+      "tid": null,
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": [
+    {
+      "amne": "villkoret bortklippt",
+      "skal": "villkoret är del av yttrandet och får inte tappas"
+    }
+  ]
+}

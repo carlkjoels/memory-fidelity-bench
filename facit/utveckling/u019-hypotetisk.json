@@ -1,0 +1,19 @@
+{
+  "id": "u019-hypotetisk",
+  "kategori": "hypotetisk",
+  "sprak": "sv",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "Om vädret blir bra kanske jag målar om huset."
+    }
+  ],
+  "ska_sparas": [],
+  "ska_ej_sparas": [
+    {
+      "amne": "Om vädret blir bra kanske jag målar om huset",
+      "skal": "hypotetiskt villkor, varken avsikt eller händelse"
+    }
+  ]
+}

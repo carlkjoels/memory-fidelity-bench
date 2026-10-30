@@ -1,0 +1,28 @@
+{
+  "id": "u015-negation",
+  "kategori": "negation",
+  "sprak": "en",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "I don't drink coffee, just so you know."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "I don't drink coffee",
+      "typ": "sjalvbild",
+      "polaritet": "negerad",
+      "modalitet": "faktisk",
+      "tid": null,
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": [
+    {
+      "amne": "the positive form",
+      "skal": "negated polarity must be preserved"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "u021-hypotetisk",
+  "kategori": "hypotetisk",
+  "sprak": "en",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "Were I younger I would move abroad."
+    }
+  ],
+  "ska_sparas": [],
+  "ska_ej_sparas": [
+    {
+      "amne": "Were I younger I would move abroad",
+      "skal": "hypothetical, not a plan or fact"
+    }
+  ]
+}

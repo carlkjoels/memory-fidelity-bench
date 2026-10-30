@@ -1,0 +1,28 @@
+{
+  "id": "u057-relativ_tid",
+  "kategori": "relativ_tid",
+  "sprak": "sv",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "Jag reser bort på fredag."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "Jag reser bort på fredag",
+      "typ": "handelse",
+      "polaritet": "bekraftad",
+      "modalitet": "faktisk",
+      "tid": "2026-10-30",
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": [
+    {
+      "amne": "ouppläst relativ tid",
+      "skal": "mot samtalsdatum 2026-10-30 → 2026-10-30"
+    }
+  ]
+}

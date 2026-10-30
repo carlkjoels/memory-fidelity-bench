@@ -1,0 +1,36 @@
+{
+  "id": "u077-motsägelse",
+  "kategori": "motsägelse",
+  "sprak": "sv",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "Jag jobbar heltid."
+    },
+    {
+      "roll": "assistant",
+      "text": "Noterat."
+    },
+    {
+      "roll": "user",
+      "text": "Nä, jag gick ner till deltid i våras."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "jag gick ner till deltid i våras",
+      "typ": "handelse",
+      "polaritet": "bekraftad",
+      "modalitet": "faktisk",
+      "tid": null,
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": [
+    {
+      "amne": "gammal uppgift som sanning",
+      "skal": "ny uppgift motsäger; beteendet (radera/skriv över/behåll båda) registreras, men den gamla får inte stå kvar som gällande"
+    }
+  ]
+}

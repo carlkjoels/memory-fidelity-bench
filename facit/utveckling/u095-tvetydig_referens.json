@@ -1,0 +1,19 @@
+{
+  "id": "u095-tvetydig_referens",
+  "kategori": "tvetydig_referens",
+  "sprak": "en",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "I met them yesterday, it went well."
+    }
+  ],
+  "ska_sparas": [],
+  "ska_ej_sparas": [
+    {
+      "amne": "unclear referent",
+      "skal": "ambiguous — do not save when uncertain"
+    }
+  ]
+}

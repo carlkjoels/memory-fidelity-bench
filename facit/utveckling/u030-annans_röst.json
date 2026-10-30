@@ -1,0 +1,28 @@
+{
+  "id": "u030-annans_röst",
+  "kategori": "annans_röst",
+  "sprak": "sv",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "Pappa tycker att jag jobbar för mycket."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "Pappa tycker att jag jobbar för mycket",
+      "typ": "handelse",
+      "polaritet": "bekraftad",
+      "modalitet": "annans_rost",
+      "tid": null,
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": [
+    {
+      "amne": "användarens egen åsikt",
+      "skal": "annans ord, får inte tillskrivas användaren"
+    }
+  ]
+}

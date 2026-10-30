@@ -1,0 +1,28 @@
+{
+  "id": "u044-ironi",
+  "kategori": "ironi",
+  "sprak": "en",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "Lovely, it rained all weekend."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "it rained all weekend",
+      "typ": "handelse",
+      "polaritet": "bekraftad",
+      "modalitet": "faktisk",
+      "tid": null,
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": [
+    {
+      "amne": "positive sentiment",
+      "skal": "irony"
+    }
+  ]
+}

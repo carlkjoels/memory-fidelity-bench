@@ -1,0 +1,36 @@
+{
+  "id": "u038-assistentens_ord",
+  "kategori": "assistentens_ord",
+  "sprak": "en",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "I keep forgetting things."
+    },
+    {
+      "roll": "assistant",
+      "text": "You could try going to bed earlier."
+    },
+    {
+      "roll": "user",
+      "text": "Maybe."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "I keep forgetting things",
+      "typ": "sjalvbild",
+      "polaritet": "bekraftad",
+      "modalitet": "faktisk",
+      "tid": null,
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": [
+    {
+      "amne": "the assistant's suggestion",
+      "skal": "assistant's words, not the user's"
+    }
+  ]
+}
