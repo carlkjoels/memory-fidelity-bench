@@ -1,0 +1,14 @@
+{
+  "id": "u004-annans-rost", "sprak": "sv", "kategori": "annans_röst",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {"roll": "user", "text": "Min läkare sa att jag borde sova mer."}
+  ],
+  "ska_sparas": [
+    {"citat": "Min läkare sa att jag borde sova mer", "typ": "handelse",
+     "polaritet": "bekraftad", "modalitet": "annans_rost", "tid": null, "talare": "user"}
+  ],
+  "ska_ej_sparas": [
+    {"amne": "användaren vill sova mer", "skal": "läkarens råd, inte användarens egen avsikt — får inte tillskrivas användaren"}
+  ]
+}

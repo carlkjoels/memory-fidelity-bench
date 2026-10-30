@@ -1,0 +1,16 @@
+{
+  "id": "u007-flera-fakta", "sprak": "sv", "kategori": "flera_fakta",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {"roll": "user", "text": "Jag slutade röka och började simma två gånger i veckan."}
+  ],
+  "ska_sparas": [
+    {"citat": "Jag slutade röka", "typ": "handelse",
+     "polaritet": "bekraftad", "modalitet": "faktisk", "tid": null, "talare": "user"},
+    {"citat": "började simma två gånger i veckan", "typ": "handelse",
+     "polaritet": "bekraftad", "modalitet": "faktisk", "tid": null, "talare": "user"}
+  ],
+  "ska_ej_sparas": [
+    {"amne": "en sammanslagen post", "skal": "två skilda fakta — att slå ihop dem förlorar information"}
+  ]
+}

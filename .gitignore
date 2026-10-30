@@ -1,0 +1,6 @@
+resultat/*.json
+__pycache__/
+*.pyc
+.venv/
+# system-installationer hålls utanför repot
+adaptrar/*/vendor/

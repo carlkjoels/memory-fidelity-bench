@@ -1,0 +1,14 @@
+{
+  "id": "u005-ironi", "sprak": "sv", "kategori": "ironi",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {"roll": "user", "text": "Jaha, jättebra att jag sov tre timmar inför mötet."}
+  ],
+  "ska_sparas": [
+    {"citat": "jag sov tre timmar", "typ": "handelse",
+     "polaritet": "bekraftad", "modalitet": "faktisk", "tid": null, "talare": "user"}
+  ],
+  "ska_ej_sparas": [
+    {"amne": "sov bra / nöjd med sömnen", "skal": "ironi — 'jättebra' är negativt menat; en positiv självbild vore fel"}
+  ]
+}

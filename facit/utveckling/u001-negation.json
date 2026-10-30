@@ -1,0 +1,15 @@
+{
+  "id": "u001-negation", "sprak": "sv", "kategori": "negation",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {"roll": "user", "text": "Jag dricker inte kaffe längre, slutade i våras."},
+    {"roll": "assistant", "text": "Noterat."}
+  ],
+  "ska_sparas": [
+    {"citat": "Jag dricker inte kaffe längre", "typ": "handelse",
+     "polaritet": "negerad", "modalitet": "faktisk", "tid": null, "talare": "user"}
+  ],
+  "ska_ej_sparas": [
+    {"amne": "dricker kaffe", "skal": "polariteten är negerad — motsatsen vore ett allvarligt fel"}
+  ]
+}
