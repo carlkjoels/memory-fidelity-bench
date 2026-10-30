@@ -1,28 +1,49 @@
 # memory-fidelity-bench
 
-En oberoende benchmark för **minnets trohet** i agentminne: sparar minneslagret
-det användaren faktiskt sa — ordagrant, med rätt polaritet, talare, modalitet
-och tid — och avstår det som inte borde sparas?
+An independent benchmark for **memory fidelity** in agent memory: does the
+memory layer store what the user **actually said** — verbatim, with the right
+polarity, speaker, modality and time — and abstain from storing what it
+shouldn't?
 
-Trohet, inte återkallning. LongMemEval och LoCoMo frågar om systemet kan hämta
-rätt svar. Den här frågar något före det: om det som lades i minnet stämmer med
-vad som sades. Ett system kan ha perfekt recall på en förvanskad post.
+Fidelity, not recall. LongMemEval and LoCoMo ask whether a system can *retrieve*
+the right answer after thousands of messages. This asks something upstream:
+whether what was put into memory matches what was said at all. A system can have
+perfect recall of a corrupted memory.
 
-**Status:** förregistrering (se `PREREGISTRERING.md`, låst 2026-10-30). Ingen
-kod körd, inga resultat, inga system installerade än. Allt syntetiskt.
+**Status:** pre-registration (see `PREREGISTRERING.md`, locked 2026-10-30). No
+code run, no results, no systems installed yet. Everything is synthetic.
 
-## Struktur
+## Why the test data is bilingual (by design, not an oversight)
 
-- `PREREGISTRERING.md` — frågan, måtten, trösklarna, nedläggningskriteriet, låst.
-- `facit/KATEGORIER.md` + `facit/SCHEMA.md` — de 17 fällorna och facit-formatet.
-- `facit/utveckling/` — öppna testsamtal (bygg och felsök riggen här).
-- `facit/dold/` — frysta, körs en gång i slutet (FAS 3).
-- `adaptrar/` — en per minneslager (Mem0, Hindsight, Graphiti, Letta). Byggs i
-  FAS 3; licenser verifieras och skrivs här innan dess.
-- `rigg/` — matning, dumpning, mekanisk jämförelse mot facit.
+The conversations are Swedish and English on purpose. Most memory layers are
+trained predominantly on English, and Swedish negation and time expressions
+("i julas", "sista augusti") are a harder test of fidelity. A system that
+preserves negation and resolves dates correctly in English but not in Swedish
+has a fidelity gap worth measuring. The **framing documents and code are in
+English**; the **conversation utterances stay in their original language**
+because translating them would destroy the cross-lingual test. Facit
+annotation fields (`skal`, `amne`) are kept in Swedish internally and are
+explained by these English docs; the hidden set's annotations are frozen in
+the SHA-256 manifest and must not be edited.
 
-## Regler
+## Layout
 
-- Inga resultat publiceras före kommentarsvecka för Mem0 och Vectorize.
-- Ton: fynd, inte omdömen. Inga rankningar utan konfidensintervall.
-- Metoden låstes före koden; versionerna låses i FAS 3 före den dolda uppsättningen.
+- `PREREGISTRERING.md` — the question, measures, thresholds, shutdown criterion; locked.
+- `facit/KATEGORIER.md` + `facit/SCHEMA.md` — the 17 traps and the facit format.
+- `facit/utveckling/` — open development conversations (build and debug the rig here).
+- `facit/dold/` — frozen, run once at the end (Phase 3).
+- `DOLD_MANIFEST.sha256` — SHA-256 of every hidden file; the freeze.
+- `adaptrar/` — one per memory layer (Mem0, Hindsight, Graphiti, Letta). Built in
+  Phase 3; licences verified and recorded here first.
+- `rigg/` — feeding, dumping, mechanical comparison against facit.
+
+Swedish directory and field names (`facit` = ground truth, `utveckling` =
+development, `dold` = hidden, `rigg` = rig, `skal` = reason) are kept as stable
+identifiers; this README is the key.
+
+## Rules
+
+- No results published before a comment week for Mem0 and Vectorize.
+- Tone: findings, not judgements. No rankings without confidence intervals.
+- The method was locked before the code; versions are locked in Phase 3 before
+  the hidden set runs.

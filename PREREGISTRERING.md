@@ -1,129 +1,134 @@
-# Förregistrering: memory-fidelity-bench
+# Pre-registration: memory-fidelity-bench
 
-**Daterad:** 2026-10-30. Låst före all körning. Ändringar efter detta datum
-loggas i en ändringslogg sist, aldrig genom tyst redigering (samma regel som
-benchmark/PROTOKOLL.md i selvra-analysis).
+**Dated:** 2026-10-30. Locked before any run. Changes after this date are
+recorded in a changelog at the end, never by silent edit (the same rule as
+`benchmark/PROTOKOLL.md` in the selvra-analysis project).
 
-## Frågan
+## The question
 
-Sparar ett agentminneslager det användaren **faktiskt sa** — ordagrant, med
-rätt polaritet, rätt talare, rätt modalitet och rätt tid — och avstår det som
-inte borde sparas?
+Does an agent memory layer store what the user **actually said** — verbatim,
+with the right polarity (negation preserved), the right speaker, the right
+modality (factual / intended / hypothetical) and the right time — and abstain
+from storing what it shouldn't?
 
-Detta är en trohets-benchmark (fidelity), inte en återkallnings-benchmark
-(recall). LongMemEval och LoCoMo mäter om systemet kan *hämta* rätt svar efter
-tusentals meddelanden. Vi mäter något före det: om det som lades i minnet över
-huvud taget stämmer med vad som sades. Ett system kan ha perfekt recall på en
-förvanskad minnespost.
+This is a fidelity benchmark, not a recall benchmark. LongMemEval and LoCoMo
+measure whether a system can *retrieve* the right answer after thousands of
+messages. We measure something upstream: whether what was placed in memory
+matches what was said at all. A system can have perfect recall of a corrupted
+memory entry.
 
-## System och versioner
+## Systems and versions
 
-Fyra självhostade, öppna minneslager. Ingen molntjänst. Licens kontrolleras och
-skrivs i README innan adaptern byggs.
+Four self-hosted, open memory layers. No cloud service. Licence is verified and
+recorded in the README before the adapter is built.
 
-| system | licens (verifieras) | version |
+| system | licence (to verify) | version |
 |---|---|---|
-| Mem0 (OSS) | Apache-2.0 (verifieras) | **pinnas i FAS 3, loggas per körning** |
-| Hindsight | MIT (verifieras) | pinnas i FAS 3 |
-| Graphiti | verifieras | pinnas i FAS 3 |
-| Letta | verifieras | pinnas i FAS 3 |
+| Mem0 (OSS) | Apache-2.0 (verify) | **pinned in Phase 3, logged per run** |
+| Hindsight | MIT (verify) | pinned in Phase 3 |
+| Graphiti | verify | pinned in Phase 3 |
+| Letta | verify | pinned in Phase 3 |
 
-Versionerna kan inte pinnas i dag utan att installera systemen. Därför: exakt
-version, commit-hash och konfiguration **fryses och committas i FAS 3 innan den
-dolda uppsättningen körs** — det är den bindande punkten, speglad från
-PROTOKOLL:s "fruset facit före resultat". Förregistreringen binder *metoden*;
-FAS 3 binder *versionerna*.
+Versions cannot be pinned today without installing the systems. Therefore: the
+exact version, commit hash and configuration are **frozen and committed in
+Phase 3 before the hidden set runs** — that is the binding point, mirrored from
+PROTOKOLL's "frozen ground truth before results". The pre-registration binds the
+*method*; Phase 3 binds the *versions*.
 
-## Modellen
+## The model
 
-Samma språkmodell och samma inställningar för ALLA system — vi mäter minnet,
-inte modellen. Modell, temperatur och alla parametrar loggas per körning.
-Modellen pinnas i FAS 3 tillsammans med systemversionerna.
+The same language model and the same settings for ALL systems — we measure the
+memory, not the model. Model, temperature and every parameter are logged per
+run. The model is pinned in Phase 3 together with the system versions.
 
-## Måtten (per sparad minnespost)
+## Measures (per stored memory entry)
 
-1. **citat** — finns innehållet ordagrant som delsträng i samtalet?
-   (deterministisk kontroll, 100 % mekanisk)
-2. **polaritet** — är negation bevarad? ("jag dricker inte kaffe" får aldrig
-   bli "dricker kaffe")
-3. **talare** — tillskrivs posten rätt röst? (användaren / assistenten / tredje
-   part)
-4. **modalitet** — faktisk / avsedd / hypotetisk, rätt klassad?
-5. **tid** — är tidsuttrycket rätt upplöst till datum?
-6. **avstående** — sparades något som INTE borde sparas? (falsk post)
-7. **motsägelse** — vid ny info som motsäger gammal: raderas det gamla, skrivs
-   det över, eller sparas båda? (registreras, inte poängsätts som fel i sig —
-   vi rapporterar beteendet)
+1. **citat (quote)** — does the content appear verbatim as a substring of the
+   conversation? (deterministic check, 100% mechanical)
+2. **polaritet (polarity)** — is negation preserved? ("I don't drink coffee"
+   must never become "drinks coffee")
+3. **talare (speaker)** — is the entry attributed to the right voice? (user /
+   assistant / third party)
+4. **modalitet (modality)** — factual / intended / hypothetical, classified right?
+5. **tid (time)** — is the time expression resolved to the right date?
+6. **avstående (abstention)** — was something stored that should NOT have been?
+   (false entry)
+7. **motsägelse (contradiction)** — when new info contradicts old: is the old
+   deleted, overwritten, or are both kept? (recorded, not scored as an error in
+   itself — we report the behaviour)
 
-## Allvarliga fel (de tre som gör ett minne farligt)
+## Serious errors (the three that make a memory dangerous)
 
-- **Negation vänd:** polariteten omkastad mot facit.
-- **Annans ord som användarens:** talare fel på ett sätt som tillskriver
-  användaren något hen inte sa.
-- **Påhittat innehåll:** en sparad post vars citat inte är en delsträng av
-  samtalet (konfabulation).
+- **Negation flipped:** polarity inverted against the ground truth.
+- **Someone else's words as the user's:** speaker wrong in a way that attributes
+  to the user something they did not say.
+- **Fabricated content:** a stored entry whose quote is not a substring of the
+  conversation (confabulation).
 
-Lätta fel (modalitet- eller tidsnyans) rapporteras separat och räknas aldrig
-som allvarliga.
+Minor errors (modality or time nuance) are reported separately and never counted
+as serious.
 
-## Måttens poängsättning
+## Scoring
 
-- Citat och avstående: deterministiskt (exakt delsträng, mängdjämförelse mot
-  facit).
-- Polaritet, talare, modalitet, tid: deterministiskt där facit är entydigt;
-  **LLM-domare endast där det måste**, och då med en kontroll mot handmärkta
-  fall (domaren får aldrig vara samma modell som minneslagret använder, och
-  dess träffsäkerhet mot handmärkningen rapporteras).
+- Quote and abstention: deterministic (exact substring, set comparison against
+  ground truth).
+- Polarity, speaker, modality, time: deterministic where the ground truth is
+  unambiguous; **an LLM judge only where it must be used**, and then checked
+  against hand-labelled cases (the judge is never the same model the memory
+  layer uses, and its agreement with the hand labels is reported).
 
-## Trösklar och nedläggningskriterium (låsta 2026-10-30)
+## Thresholds and shutdown criterion (locked 2026-10-30)
 
-- **Nedläggning:** om ALLA fyra system har **under 1 % allvarliga fel** på den
-  dolda uppsättningen finns ingen historia — projektet läggs ner och det
-  rapporteras som ett nollresultat. Skrivet i förväg.
-- Ett system räknas som "har ett troshetsproblem" vid ≥ 1 % allvarliga fel.
-- Lätta fel har ingen tröskel; de beskrivs, döms inte.
+- **Shutdown:** if ALL four systems have **under 1% serious errors** on the
+  hidden set, there is no story — the project is shut down and reported as a
+  null result. Written in advance.
+- A system is deemed to "have a fidelity problem" at ≥ 1% serious errors.
+- Minor errors have no threshold; they are described, not judged.
 
-## Testdata (FAS 2)
+## Test data (Phase 2)
 
-150 syntetiska samtal, svenska och engelska, 17 kategorier (se
-`facit/KATEGORIER.md`). Varje samtal har facit i JSON: exakt vad som ska
-sparas och vad som inte ska sparas.
+150 synthetic conversations, Swedish and English, 17 categories (see
+`facit/KATEGORIER.md`). Each conversation has ground truth in JSON: exactly what
+should be stored and what should not.
 
-- **Utveckling:** 100 samtal (`facit/utveckling/`), öppna, används för att
-  bygga och felsöka riggen.
-- **Dold:** 50 samtal (`facit/dold/`), **frysta med SHA-256-manifest, körs en
-  enda gång i slutet.** Rättningar av riggen efter att dolda setet körts
-  ogiltigförklarar det — en ny dold uppsättning krävs. (PROTOKOLL-regeln.)
+- **Development:** 100 conversations (`facit/utveckling/`), open, used to build
+  and debug the rig.
+- **Hidden:** 50 conversations (`facit/dold/`), **frozen with a SHA-256
+  manifest, run exactly once at the end.** Fixing the rig after the hidden set
+  has run invalidates it — a new hidden set is required. (The PROTOKOLL rule.)
 
-**Beroende, ärligt noterat:** de 17 kategorierna är i denna version härledda ur
-måtten och de kända dialoglager-kategorierna (negation, hypotetiskt, annans
-röst, ironi, tid över månads-/årsskifte, flera fakta per rad, inget att
-extrahera, injektion m.fl.). De synkas mot `reports/Dialoglager för Selvra.md`
-när den filen finns; avviker den justeras `KATEGORIER.md` *före* FAS 3, aldrig
-efter att dolda setet körts.
+**Dependency, noted honestly:** the 17 categories in this version are derived
+from the measures and the known dialogue-layer categories (negation,
+hypothetical, third-party voice, irony, time across month/year boundaries,
+multiple facts per line, nothing to extract, injection, etc.). They are
+reconciled against `reports/Dialoglager för Selvra.md` when that file exists; if
+it differs, `KATEGORIER.md` is adjusted *before* Phase 3, never after the hidden
+set has run.
 
-## Testrigg (FAS 3)
+## Test rig (Phase 3)
 
-Mata in varje samtal, dumpa allt systemet sparat, jämför mekaniskt med facit.
-Logga version, modell, datum och kostnad per körning. Determinism där det går,
-LLM-domare bara där det måste (med handmärknings-kontroll).
+Feed each conversation, dump everything the system stored, compare mechanically
+against the ground truth. Log version, model, date and cost per run. Determinism
+where possible, LLM judge only where it must be used (with a hand-label check).
 
-## Kalibrering (FAS 4)
+## Calibration (Phase 4)
 
-Reproducera en liten del av LongMemEval eller LoCoMo med varje system och
-jämför med deras publicerade siffror. Stor avvikelse → felsök riggen innan
-något troshets-resultat tas på allvar. Riggen måste först visa att den kan
-återskapa kända tal.
+Reproduce a small part of LongMemEval or LoCoMo with each system and compare to
+their published numbers. A large discrepancy → debug the rig before any fidelity
+result is taken seriously. The rig must first show it can reproduce known
+numbers.
 
-## Regler
+## Rules
 
-- Inga resultat publiceras före en kommentarsvecka för Mem0 och Vectorize
-  (systemens upphovspersoner får svara innan publicering — ansvarsfull
-  disclosure).
-- Ton: torr och saklig. Fynd, inte omdömen. Inga superlativ, inga rankningar
-  utan konfidensintervall.
-- Allt syntetiskt. Ingen hälsodata, ingen Selvra-historik, inget privat.
+- No results are published before a comment week for Mem0 and Vectorize (the
+  system authors get to respond before publication — responsible disclosure).
+- Tone: dry and factual. Findings, not judgements. No superlatives, no rankings
+  without confidence intervals.
+- Everything synthetic. No health data, no Selvra history, nothing private.
 
-## Ändringslogg
+## Changelog
 
-- 2026-10-30: Första versionen, låst.
+- 2026-10-30: First version, locked.
+- 2026-10-30: Framing documents and code translated to English; identifiers,
+  conversation utterances (bilingual by design) and the frozen hidden set left
+  unchanged.

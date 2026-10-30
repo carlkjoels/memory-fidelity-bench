@@ -1,13 +1,12 @@
-"""Frys den dolda uppsättningen: SHA-256-manifest över varje facit-fil.
+"""Freeze the hidden set: a SHA-256 manifest over every ground-truth file.
 
-Efter frysning gäller PROTOKOLL-regeln: den dolda uppsättningen körs EN gång.
-Ändras någon fil efteråt bryts manifestet och uppsättningen är förbrukad — en
-ny dold uppsättning krävs. Frysaren (den som kör detta) är inte författaren och
-inte den som rättar riggen; rollerna hålls isär så att ingen kan teacha mot
-testet.
+After freezing, the PROTOKOLL rule applies: the hidden set is run ONCE. If any
+file changes afterwards the manifest breaks and the set is spent — a new hidden
+set is required. The freezer (whoever runs this) is not the author and not the
+one who fixes the rig; the roles are kept apart so no one can teach to the test.
 
-    python rigg/frys_dold.py           # skapar DOLD_MANIFEST.sha256 (en gång)
-    python rigg/frys_dold.py --verify  # kontrollerar att inget ändrats
+    python rigg/frys_dold.py           # create DOLD_MANIFEST.sha256 (once)
+    python rigg/frys_dold.py --verify  # check that nothing changed
 """
 from __future__ import annotations
 
@@ -29,30 +28,30 @@ def _hashar() -> list[str]:
 
 def frys() -> int:
     if MANIFEST.exists():
-        print("DOLD_MANIFEST.sha256 finns redan — den dolda uppsättningen är "
-              "redan fryst. En ny uppsättning krävs för att frysa om.", file=sys.stderr)
+        print("DOLD_MANIFEST.sha256 already exists — the hidden set is already "
+              "frozen. A new set is required to re-freeze.", file=sys.stderr)
         return 1
     rader = _hashar()
     if not rader:
-        print("facit/dold/ är tom — inget att frysa.", file=sys.stderr)
+        print("facit/dold/ is empty — nothing to freeze.", file=sys.stderr)
         return 1
     MANIFEST.write_text("\n".join(rader) + "\n")
-    print(f"Fryst {len(rader)} dolda facit-filer i {MANIFEST.name}. "
-          "Uppsättningen körs nu EN gång; ändras någon fil bryts manifestet.")
+    print(f"Froze {len(rader)} hidden ground-truth files in {MANIFEST.name}. "
+          "The set now runs ONCE; if any file changes the manifest breaks.")
     return 0
 
 
 def verify() -> int:
     if not MANIFEST.exists():
-        print("inget manifest — uppsättningen är inte fryst än", file=sys.stderr)
+        print("no manifest — the set is not frozen yet", file=sys.stderr)
         return 1
     forvantat = MANIFEST.read_text().strip().splitlines()
     nu = _hashar()
     if forvantat == nu:
-        print(f"OK — alla {len(nu)} dolda filer oförändrade sedan frysning.")
+        print(f"OK — all {len(nu)} hidden files unchanged since freezing.")
         return 0
-    print("BRUTET MANIFEST — den dolda uppsättningen har ändrats och är förbrukad. "
-          "En ny dold uppsättning krävs.", file=sys.stderr)
+    print("BROKEN MANIFEST — the hidden set has changed and is spent. "
+          "A new hidden set is required.", file=sys.stderr)
     return 2
 
 

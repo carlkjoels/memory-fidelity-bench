@@ -1,10 +1,11 @@
-"""Generera syntetiska utvecklingssamtal med facit. Körs en gång för att fylla
-facit/utveckling/. Invariant: varje ska_sparas-citat ÄR en exakt delsträng av
-ett user-meddelande — annars vore facit konfabulation. Valideras i slutet.
+"""Generate synthetic development conversations with ground truth. Run once to
+fill facit/utveckling/. Invariant: every ska_sparas quote IS an exact substring
+of a user message — otherwise the ground truth would be confabulation. Validated
+at the end.
 
-Inga riktiga personer, inga hälsodata som dominerar; varierade vardagsämnen,
-svenska och engelska. Determinism utan slump: variationen kommer ur listor,
-inte ur Math.random (reproducerbart, som allt i selvra-stilen).
+No real people, no health data dominating; varied everyday topics, Swedish and
+English. Deterministic, no randomness: variation comes from lists, not from a
+random source (reproducible). Identifiers are Swedish; see README.
 """
 from __future__ import annotations
 
