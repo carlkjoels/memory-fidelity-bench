@@ -1,17 +1,22 @@
 {
   "id": "u081-korrigering",
   "kategori": "korrigering",
-  "sprak": "sv",
+  "doman": "vardag",
+  "sprak": "en",
   "samtalsdatum": "2026-10-30",
   "meddelanden": [
     {
       "roll": "user",
-      "text": "Mötet är klockan två. Nej, klockan tre."
+      "text": "My meeting is on Monday. Sorry, I meant Thursday."
+    },
+    {
+      "roll": "assistant",
+      "text": "Noted."
     }
   ],
   "ska_sparas": [
     {
-      "citat": "klockan tre",
+      "citat": "I meant Thursday",
       "typ": "handelse",
       "polaritet": "bekraftad",
       "modalitet": "faktisk",
@@ -21,8 +26,8 @@
   ],
   "ska_ej_sparas": [
     {
-      "amne": "det felaktiga",
-      "skal": "korrigerat av användaren; det rättade gäller"
+      "amne": "Monday",
+      "skal": "corrected"
     }
   ]
 }

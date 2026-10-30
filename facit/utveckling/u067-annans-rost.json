@@ -1,0 +1,57 @@
+{
+  "id": "u067-annans-rost",
+  "kategori": "annans-rost",
+  "doman": "halsa",
+  "sprak": "en",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "Hi, I have a question."
+    },
+    {
+      "roll": "assistant",
+      "text": "Sure, go ahead."
+    },
+    {
+      "roll": "user",
+      "text": "It's nothing urgent."
+    },
+    {
+      "roll": "assistant",
+      "text": "Okay, I'm listening."
+    },
+    {
+      "roll": "user",
+      "text": "The nurse said my blood pressure was a bit high."
+    },
+    {
+      "roll": "assistant",
+      "text": "Noted."
+    },
+    {
+      "roll": "user",
+      "text": "Thanks for the help."
+    },
+    {
+      "roll": "assistant",
+      "text": "Of course."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "The nurse said my blood pressure was a bit high",
+      "typ": "handelse",
+      "polaritet": "bekraftad",
+      "modalitet": "annans_rost",
+      "tid": null,
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": [
+    {
+      "amne": "user's claim",
+      "skal": "nurse's words"
+    }
+  ]
+}

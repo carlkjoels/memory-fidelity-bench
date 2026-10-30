@@ -1,0 +1,33 @@
+{
+  "id": "u027-relativ-tid",
+  "kategori": "relativ-tid",
+  "doman": "vardag",
+  "sprak": "sv",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "Mötet är om två veckor."
+    },
+    {
+      "roll": "assistant",
+      "text": "Noterat."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "Mötet är om två veckor",
+      "typ": "handelse",
+      "polaritet": "bekraftad",
+      "modalitet": "faktisk",
+      "tid": "2026-11-13",
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": [
+    {
+      "amne": "ouppläst",
+      "skal": "2026-11-13"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "u044-villkorlig",
+  "kategori": "villkorlig",
+  "doman": "halsa",
+  "sprak": "en",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "I'll increase the dose if my doctor approves."
+    },
+    {
+      "roll": "assistant",
+      "text": "Noted."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "I'll increase the dose if my doctor approves",
+      "typ": "intention",
+      "polaritet": "bekraftad",
+      "modalitet": "avsedd",
+      "tid": null,
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": [
+    {
+      "amne": "will increase the dose",
+      "skal": "conditional on approval"
+    }
+  ]
+}

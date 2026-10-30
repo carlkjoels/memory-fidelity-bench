@@ -1,0 +1,33 @@
+{
+  "id": "u075-avsikt",
+  "kategori": "avsikt",
+  "doman": "vardag",
+  "sprak": "sv",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "Jag ska börja laga mer vegetariskt."
+    },
+    {
+      "roll": "assistant",
+      "text": "Noterat."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "Jag ska börja laga mer vegetariskt",
+      "typ": "intention",
+      "polaritet": "bekraftad",
+      "modalitet": "avsedd",
+      "tid": null,
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": [
+    {
+      "amne": "lagar redan",
+      "skal": "avsedd"
+    }
+  ]
+}

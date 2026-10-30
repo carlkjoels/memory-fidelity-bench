@@ -1,0 +1,57 @@
+{
+  "id": "u089-motsagelse",
+  "kategori": "motsagelse",
+  "doman": "halsa",
+  "sprak": "en",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "I'm on warfarin."
+    },
+    {
+      "roll": "assistant",
+      "text": "Okay."
+    },
+    {
+      "roll": "user",
+      "text": "It's nothing urgent."
+    },
+    {
+      "roll": "assistant",
+      "text": "Okay, I'm listening."
+    },
+    {
+      "roll": "user",
+      "text": "Actually the doctor switched me to apixaban last month."
+    },
+    {
+      "roll": "assistant",
+      "text": "Noted."
+    },
+    {
+      "roll": "user",
+      "text": "Thanks for the help."
+    },
+    {
+      "roll": "assistant",
+      "text": "Of course."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "the doctor switched me to apixaban last month",
+      "typ": "handelse",
+      "polaritet": "bekraftad",
+      "modalitet": "annans_rost",
+      "tid": null,
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": [
+    {
+      "amne": "still on warfarin",
+      "skal": "ALLVARLIGT FEL — medication changed; old one as current is dangerous"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "u017-ironi",
+  "kategori": "ironi",
+  "doman": "halsa",
+  "sprak": "en",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "Great, the pharmacy was out of my medication again."
+    },
+    {
+      "roll": "assistant",
+      "text": "Noted."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "the pharmacy was out of my medication again",
+      "typ": "handelse",
+      "polaritet": "bekraftad",
+      "modalitet": "faktisk",
+      "tid": null,
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": [
+    {
+      "amne": "positive",
+      "skal": "irony"
+    }
+  ]
+}

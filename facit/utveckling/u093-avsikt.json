@@ -1,0 +1,57 @@
+{
+  "id": "u093-avsikt",
+  "kategori": "avsikt",
+  "doman": "halsa",
+  "sprak": "en",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "Hi, I have a question."
+    },
+    {
+      "roll": "assistant",
+      "text": "Sure, go ahead."
+    },
+    {
+      "roll": "user",
+      "text": "It's nothing urgent."
+    },
+    {
+      "roll": "assistant",
+      "text": "Okay, I'm listening."
+    },
+    {
+      "roll": "user",
+      "text": "I'm planning to ask about a lower dose next time."
+    },
+    {
+      "roll": "assistant",
+      "text": "Noted."
+    },
+    {
+      "roll": "user",
+      "text": "Thanks for the help."
+    },
+    {
+      "roll": "assistant",
+      "text": "Of course."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "I'm planning to ask about a lower dose next time",
+      "typ": "intention",
+      "polaritet": "bekraftad",
+      "modalitet": "avsedd",
+      "tid": null,
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": [
+    {
+      "amne": "lower dose now",
+      "skal": "intended, not current"
+    }
+  ]
+}

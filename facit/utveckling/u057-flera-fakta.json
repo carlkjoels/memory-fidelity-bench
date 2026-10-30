@@ -1,0 +1,41 @@
+{
+  "id": "u057-flera-fakta",
+  "kategori": "flera-fakta",
+  "doman": "halsa",
+  "sprak": "sv",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "Jag bytte till ny inhalator och slutade med den gamla sprayen."
+    },
+    {
+      "roll": "assistant",
+      "text": "Noterat."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "Jag bytte till ny inhalator",
+      "typ": "handelse",
+      "polaritet": "bekraftad",
+      "modalitet": "faktisk",
+      "tid": null,
+      "talare": "user"
+    },
+    {
+      "citat": "slutade med den gamla sprayen",
+      "typ": "handelse",
+      "polaritet": "bekraftad",
+      "modalitet": "faktisk",
+      "tid": null,
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": [
+    {
+      "amne": "sammanslagen",
+      "skal": "två fakta"
+    }
+  ]
+}

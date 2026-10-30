@@ -1,0 +1,33 @@
+{
+  "id": "u063-tid-manadsskifte",
+  "kategori": "tid-manadsskifte",
+  "doman": "halsa",
+  "sprak": "en",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "My prescription runs out at the end of November."
+    },
+    {
+      "roll": "assistant",
+      "text": "Noted."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "My prescription runs out at the end of November",
+      "typ": "handelse",
+      "polaritet": "bekraftad",
+      "modalitet": "faktisk",
+      "tid": "2026-11-30",
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": [
+    {
+      "amne": "unresolved",
+      "skal": "end of November = 2026-11-30"
+    }
+  ]
+}

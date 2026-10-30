@@ -1,0 +1,33 @@
+{
+  "id": "u053-negation",
+  "kategori": "negation",
+  "doman": "halsa",
+  "sprak": "en",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "I'm not on any heart medication."
+    },
+    {
+      "roll": "assistant",
+      "text": "Noted."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "I'm not on any heart medication",
+      "typ": "sjalvbild",
+      "polaritet": "negerad",
+      "modalitet": "faktisk",
+      "tid": null,
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": [
+    {
+      "amne": "on heart medication",
+      "skal": "negated medical fact"
+    }
+  ]
+}

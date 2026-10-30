@@ -1,0 +1,57 @@
+{
+  "id": "u055-avsikt",
+  "kategori": "avsikt",
+  "doman": "halsa",
+  "sprak": "en",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "Hi, I have a question."
+    },
+    {
+      "roll": "assistant",
+      "text": "Sure, go ahead."
+    },
+    {
+      "roll": "user",
+      "text": "It's nothing urgent."
+    },
+    {
+      "roll": "assistant",
+      "text": "Okay, I'm listening."
+    },
+    {
+      "roll": "user",
+      "text": "I intend to cut my coffee to one cup a day."
+    },
+    {
+      "roll": "assistant",
+      "text": "Noted."
+    },
+    {
+      "roll": "user",
+      "text": "Thanks for the help."
+    },
+    {
+      "roll": "assistant",
+      "text": "Of course."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "I intend to cut my coffee to one cup a day",
+      "typ": "intention",
+      "polaritet": "bekraftad",
+      "modalitet": "avsedd",
+      "tid": null,
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": [
+    {
+      "amne": "already one cup",
+      "skal": "intended"
+    }
+  ]
+}

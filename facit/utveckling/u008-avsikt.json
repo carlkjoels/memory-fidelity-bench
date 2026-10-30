@@ -1,0 +1,33 @@
+{
+  "id": "u008-avsikt",
+  "kategori": "avsikt",
+  "doman": "halsa",
+  "sprak": "en",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "I'm going to start walking after dinner to help my sugar."
+    },
+    {
+      "roll": "assistant",
+      "text": "Noted."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "I'm going to start walking after dinner",
+      "typ": "intention",
+      "polaritet": "bekraftad",
+      "modalitet": "avsedd",
+      "tid": null,
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": [
+    {
+      "amne": "already walks after dinner",
+      "skal": "intended, not factual"
+    }
+  ]
+}

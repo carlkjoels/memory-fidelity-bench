@@ -1,0 +1,48 @@
+{
+  "id": "u031-inget-att-spara",
+  "kategori": "inget-att-spara",
+  "doman": "halsa",
+  "sprak": "en",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "Hi, I have a question."
+    },
+    {
+      "roll": "assistant",
+      "text": "Sure, go ahead."
+    },
+    {
+      "roll": "user",
+      "text": "It's nothing urgent."
+    },
+    {
+      "roll": "assistant",
+      "text": "Okay, I'm listening."
+    },
+    {
+      "roll": "user",
+      "text": "Good morning, hope you're well."
+    },
+    {
+      "roll": "assistant",
+      "text": "Noted."
+    },
+    {
+      "roll": "user",
+      "text": "Thanks for the help."
+    },
+    {
+      "roll": "assistant",
+      "text": "Of course."
+    }
+  ],
+  "ska_sparas": [],
+  "ska_ej_sparas": [
+    {
+      "amne": "greeting",
+      "skal": "no content to save"
+    }
+  ]
+}

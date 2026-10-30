@@ -1,0 +1,24 @@
+{
+  "id": "u005-hypotetisk",
+  "kategori": "hypotetisk",
+  "doman": "halsa",
+  "sprak": "en",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "If the pain gets worse I might ask for something stronger."
+    },
+    {
+      "roll": "assistant",
+      "text": "Noted."
+    }
+  ],
+  "ska_sparas": [],
+  "ska_ej_sparas": [
+    {
+      "amne": "on stronger medication",
+      "skal": "hypothetical, not a current fact"
+    }
+  ]
+}

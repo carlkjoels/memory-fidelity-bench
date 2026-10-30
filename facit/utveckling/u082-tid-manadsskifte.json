@@ -1,0 +1,57 @@
+{
+  "id": "u082-tid-manadsskifte",
+  "kategori": "tid-manadsskifte",
+  "doman": "vardag",
+  "sprak": "sv",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "Hej, jag har en fråga."
+    },
+    {
+      "roll": "assistant",
+      "text": "Visst, berätta."
+    },
+    {
+      "roll": "user",
+      "text": "Det är inget akut."
+    },
+    {
+      "roll": "assistant",
+      "text": "Okej, jag lyssnar."
+    },
+    {
+      "roll": "user",
+      "text": "Kursen slutar sista november."
+    },
+    {
+      "roll": "assistant",
+      "text": "Noterat."
+    },
+    {
+      "roll": "user",
+      "text": "Tack för att du hjälper till."
+    },
+    {
+      "roll": "assistant",
+      "text": "Självklart."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "Kursen slutar sista november",
+      "typ": "handelse",
+      "polaritet": "bekraftad",
+      "modalitet": "faktisk",
+      "tid": "2026-11-30",
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": [
+    {
+      "amne": "fel datum",
+      "skal": "2026-11-30"
+    }
+  ]
+}

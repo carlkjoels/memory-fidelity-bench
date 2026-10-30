@@ -166,3 +166,14 @@ numbers.
 - 2026-10-30: Filenames restricted to `a-z 0-9 - _`; one spelling per category.
 - 2026-10-30: At least a third of the development cases are 6–12 messages long,
   with the important statement in the middle of the conversation.
+- 2026-10-30: **Two domains, reported separately.** Conversations are ~2/3
+  health (allergies, medications, doses, symptoms, what the doctor said vs what
+  the patient believes) and ~1/3 everyday (the control). Every measure is
+  reported per domain, so "are fidelity errors more common in health
+  conversations than everyday ones?" is a finding in its own right. Each
+  conversation carries a `doman` field ("halsa" | "vardag"). The same 2/3–1/3
+  split applies to hidden set v2. All 17 categories appear in BOTH domains.
+- 2026-10-30: Development set reworked in place within u001–u100 (open set,
+  rework permitted and logged): ~35 short cases converted to 6–12-message
+  conversations with the key statement mid-conversation; health woven in to the
+  2/3 ratio; the generator remains the single reproducible source.

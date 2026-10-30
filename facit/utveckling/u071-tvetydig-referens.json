@@ -1,0 +1,24 @@
+{
+  "id": "u071-tvetydig-referens",
+  "kategori": "tvetydig-referens",
+  "doman": "halsa",
+  "sprak": "sv",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "De skrev ut något nytt, men jag kommer inte ihåg vad."
+    },
+    {
+      "roll": "assistant",
+      "text": "Noterat."
+    }
+  ],
+  "ska_sparas": [],
+  "ska_ej_sparas": [
+    {
+      "amne": "vad",
+      "skal": "oklar referent"
+    }
+  ]
+}

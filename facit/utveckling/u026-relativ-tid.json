@@ -1,0 +1,33 @@
+{
+  "id": "u026-relativ-tid",
+  "kategori": "relativ-tid",
+  "doman": "halsa",
+  "sprak": "sv",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "Jag var hos vårdcentralen i tisdags."
+    },
+    {
+      "roll": "assistant",
+      "text": "Noterat."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "Jag var hos vårdcentralen i tisdags",
+      "typ": "handelse",
+      "polaritet": "bekraftad",
+      "modalitet": "faktisk",
+      "tid": "2026-10-27",
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": [
+    {
+      "amne": "ouppläst",
+      "skal": "i tisdags = 2026-10-27"
+    }
+  ]
+}

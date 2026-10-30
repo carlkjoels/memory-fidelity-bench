@@ -1,0 +1,33 @@
+{
+  "id": "u100-relativ-tid",
+  "kategori": "relativ-tid",
+  "doman": "vardag",
+  "sprak": "sv",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "Jag reser bort på fredag."
+    },
+    {
+      "roll": "assistant",
+      "text": "Noterat."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "Jag reser bort på fredag",
+      "typ": "intention",
+      "polaritet": "bekraftad",
+      "modalitet": "avsedd",
+      "tid": "2026-10-31",
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": [
+    {
+      "amne": "ouppläst",
+      "skal": "nästa fredag = 2026-10-31"
+    }
+  ]
+}

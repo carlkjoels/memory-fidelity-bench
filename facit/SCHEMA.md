@@ -8,6 +8,7 @@ be stored, ska_ej_sparas = should not be stored, citat = quote, skal = reason).
 {
   "id": "u001",                         # u = development (utveckling), d = hidden (dold)
   "sprak": "sv" | "en",                 # language of the conversation
+  "doman": "halsa" | "vardag",         # domain: health (focus) | everyday (control)
   "kategori": "<one of the 17>",
   "samtalsdatum": "2026-10-30",         # "today" for relative time expressions
   "meddelanden": [                      # messages

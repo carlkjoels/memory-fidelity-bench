@@ -1,0 +1,24 @@
+{
+  "id": "u077-hypotetisk",
+  "kategori": "hypotetisk",
+  "doman": "vardag",
+  "sprak": "en",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "If it rains I might stay home."
+    },
+    {
+      "roll": "assistant",
+      "text": "Noted."
+    }
+  ],
+  "ska_sparas": [],
+  "ska_ej_sparas": [
+    {
+      "amne": "staying home",
+      "skal": "hypothetical"
+    }
+  ]
+}

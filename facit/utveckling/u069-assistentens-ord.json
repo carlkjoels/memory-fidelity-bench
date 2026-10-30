@@ -1,0 +1,33 @@
+{
+  "id": "u069-assistentens-ord",
+  "kategori": "assistentens-ord",
+  "doman": "halsa",
+  "sprak": "sv",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "Jag glömmer ofta att dricka vatten."
+    },
+    {
+      "roll": "assistant",
+      "text": "Noterat."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "Jag glömmer ofta att dricka vatten",
+      "typ": "sjalvbild",
+      "polaritet": "bekraftad",
+      "modalitet": "faktisk",
+      "tid": null,
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": [
+    {
+      "amne": "påminnelse-plan",
+      "skal": "assistentens förslag"
+    }
+  ]
+}

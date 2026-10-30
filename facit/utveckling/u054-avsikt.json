@@ -1,0 +1,33 @@
+{
+  "id": "u054-avsikt",
+  "kategori": "avsikt",
+  "doman": "halsa",
+  "sprak": "sv",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "Jag planerar att sluta snusa till nyår."
+    },
+    {
+      "roll": "assistant",
+      "text": "Noterat."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "Jag planerar att sluta snusa",
+      "typ": "intention",
+      "polaritet": "bekraftad",
+      "modalitet": "avsedd",
+      "tid": null,
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": [
+    {
+      "amne": "har slutat snusa",
+      "skal": "avsedd"
+    }
+  ]
+}

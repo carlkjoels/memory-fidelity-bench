@@ -1,0 +1,33 @@
+{
+  "id": "u048-kvantitet-enhet",
+  "kategori": "kvantitet-enhet",
+  "doman": "vardag",
+  "sprak": "sv",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "Jag tränar tre gånger i veckan."
+    },
+    {
+      "roll": "assistant",
+      "text": "Noterat."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "Jag tränar tre gånger i veckan",
+      "typ": "handelse",
+      "polaritet": "bekraftad",
+      "modalitet": "faktisk",
+      "tid": null,
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": [
+    {
+      "amne": "förvanskad siffra",
+      "skal": "siffror exakt"
+    }
+  ]
+}

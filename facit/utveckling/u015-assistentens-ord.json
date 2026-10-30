@@ -1,0 +1,33 @@
+{
+  "id": "u015-assistentens-ord",
+  "kategori": "assistentens-ord",
+  "doman": "vardag",
+  "sprak": "sv",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "Jag känner mig stressad på jobbet."
+    },
+    {
+      "roll": "assistant",
+      "text": "Noterat."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "Jag känner mig stressad på jobbet",
+      "typ": "sjalvbild",
+      "polaritet": "bekraftad",
+      "modalitet": "faktisk",
+      "tid": null,
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": [
+    {
+      "amne": "meditera",
+      "skal": "assistentens förslag"
+    }
+  ]
+}

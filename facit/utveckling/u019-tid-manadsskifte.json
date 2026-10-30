@@ -1,0 +1,57 @@
+{
+  "id": "u019-tid-manadsskifte",
+  "kategori": "tid-manadsskifte",
+  "doman": "halsa",
+  "sprak": "en",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "Hi, I have a question."
+    },
+    {
+      "roll": "assistant",
+      "text": "Sure, go ahead."
+    },
+    {
+      "roll": "user",
+      "text": "It's nothing urgent."
+    },
+    {
+      "roll": "assistant",
+      "text": "Okay, I'm listening."
+    },
+    {
+      "roll": "user",
+      "text": "I started the new medication on the first of October."
+    },
+    {
+      "roll": "assistant",
+      "text": "Noted."
+    },
+    {
+      "roll": "user",
+      "text": "Thanks for the help."
+    },
+    {
+      "roll": "assistant",
+      "text": "Of course."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "I started the new medication on the first of October",
+      "typ": "handelse",
+      "polaritet": "bekraftad",
+      "modalitet": "faktisk",
+      "tid": "2026-10-01",
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": [
+    {
+      "amne": "unresolved date",
+      "skal": "resolve to 2026-10-01"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "u074-negation",
+  "kategori": "negation",
+  "doman": "vardag",
+  "sprak": "en",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "I never work on weekends."
+    },
+    {
+      "roll": "assistant",
+      "text": "Noted."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "I never work on weekends",
+      "typ": "sjalvbild",
+      "polaritet": "negerad",
+      "modalitet": "faktisk",
+      "tid": null,
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": [
+    {
+      "amne": "works weekends",
+      "skal": "negated"
+    }
+  ]
+}

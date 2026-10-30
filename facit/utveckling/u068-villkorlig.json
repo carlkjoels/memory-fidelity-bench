@@ -1,0 +1,33 @@
+{
+  "id": "u068-villkorlig",
+  "kategori": "villkorlig",
+  "doman": "halsa",
+  "sprak": "sv",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "Jag byter medicin om den här ger yrsel."
+    },
+    {
+      "roll": "assistant",
+      "text": "Noterat."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "Jag byter medicin om den här ger yrsel",
+      "typ": "intention",
+      "polaritet": "bekraftad",
+      "modalitet": "avsedd",
+      "tid": null,
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": [
+    {
+      "amne": "villkor bort",
+      "skal": "villkoret hör till"
+    }
+  ]
+}

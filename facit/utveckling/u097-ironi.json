@@ -1,0 +1,33 @@
+{
+  "id": "u097-ironi",
+  "kategori": "ironi",
+  "doman": "halsa",
+  "sprak": "sv",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "Fantastiskt, väntrummet var fullt i tre timmar."
+    },
+    {
+      "roll": "assistant",
+      "text": "Noterat."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "väntrummet var fullt i tre timmar",
+      "typ": "handelse",
+      "polaritet": "bekraftad",
+      "modalitet": "faktisk",
+      "tid": null,
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": [
+    {
+      "amne": "nöjd",
+      "skal": "ironi"
+    }
+  ]
+}

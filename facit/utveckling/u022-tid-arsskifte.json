@@ -1,0 +1,57 @@
+{
+  "id": "u022-tid-arsskifte",
+  "kategori": "tid-arsskifte",
+  "doman": "halsa",
+  "sprak": "sv",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "Hej, jag har en fråga."
+    },
+    {
+      "roll": "assistant",
+      "text": "Visst, berätta."
+    },
+    {
+      "roll": "user",
+      "text": "Det är inget akut."
+    },
+    {
+      "roll": "assistant",
+      "text": "Okej, jag lyssnar."
+    },
+    {
+      "roll": "user",
+      "text": "Jag fick diagnosen i julas."
+    },
+    {
+      "roll": "assistant",
+      "text": "Noterat."
+    },
+    {
+      "roll": "user",
+      "text": "Tack för att du hjälper till."
+    },
+    {
+      "roll": "assistant",
+      "text": "Självklart."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "Jag fick diagnosen i julas",
+      "typ": "handelse",
+      "polaritet": "bekraftad",
+      "modalitet": "faktisk",
+      "tid": "2025-12",
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": [
+    {
+      "amne": "fel år",
+      "skal": "'i julas' = föregående december"
+    }
+  ]
+}

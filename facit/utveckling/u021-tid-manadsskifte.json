@@ -1,0 +1,33 @@
+{
+  "id": "u021-tid-manadsskifte",
+  "kategori": "tid-manadsskifte",
+  "doman": "vardag",
+  "sprak": "sv",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "Vi flyttade in sista juni."
+    },
+    {
+      "roll": "assistant",
+      "text": "Noterat."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "Vi flyttade in sista juni",
+      "typ": "handelse",
+      "polaritet": "bekraftad",
+      "modalitet": "faktisk",
+      "tid": "2026-06-30",
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": [
+    {
+      "amne": "fel datum",
+      "skal": "2026-06-30"
+    }
+  ]
+}

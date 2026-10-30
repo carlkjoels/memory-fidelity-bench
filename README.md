@@ -30,6 +30,14 @@ annotation fields (`skal`, `amne`) are kept in Swedish internally and are
 explained by these English docs; the hidden set's annotations are frozen in
 the SHA-256 manifest and must not be edited.
 
+## Domains
+
+Conversations are ~2/3 **health** (the focus: allergies, medications, doses,
+symptoms, doctor's words vs patient's belief) and ~1/3 **everyday** (the
+control). Every measure is reported per domain — if fidelity errors are more
+common in health conversations, that is itself a finding. Each conversation
+carries a `doman` field. All 17 categories appear in both domains.
+
 ## Layout
 
 - `PREREGISTRERING.md` — the question, measures, thresholds, shutdown criterion; locked.

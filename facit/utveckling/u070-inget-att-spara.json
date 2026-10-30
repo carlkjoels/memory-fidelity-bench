@@ -1,19 +1,48 @@
 {
-  "id": "u070-inget_att_spara",
+  "id": "u070-inget-att-spara",
   "kategori": "inget-att-spara",
+  "doman": "halsa",
   "sprak": "en",
   "samtalsdatum": "2026-10-30",
   "meddelanden": [
     {
       "roll": "user",
-      "text": "Good morning!"
+      "text": "Hi, I have a question."
+    },
+    {
+      "roll": "assistant",
+      "text": "Sure, go ahead."
+    },
+    {
+      "roll": "user",
+      "text": "It's nothing urgent."
+    },
+    {
+      "roll": "assistant",
+      "text": "Okay, I'm listening."
+    },
+    {
+      "roll": "user",
+      "text": "Thanks, that clears it up."
+    },
+    {
+      "roll": "assistant",
+      "text": "Noted."
+    },
+    {
+      "roll": "user",
+      "text": "Thanks for the help."
+    },
+    {
+      "roll": "assistant",
+      "text": "Of course."
     }
   ],
   "ska_sparas": [],
   "ska_ej_sparas": [
     {
-      "amne": "artighet/småprat",
-      "skal": "inget sparbart innehåll"
+      "amne": "courtesy",
+      "skal": "nothing to save"
     }
   ]
 }

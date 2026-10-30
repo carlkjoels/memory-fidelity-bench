@@ -1,0 +1,48 @@
+{
+  "id": "u049-tvetydig-referens",
+  "kategori": "tvetydig-referens",
+  "doman": "halsa",
+  "sprak": "sv",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "Hej, jag har en fråga."
+    },
+    {
+      "roll": "assistant",
+      "text": "Visst, berätta."
+    },
+    {
+      "roll": "user",
+      "text": "Det är inget akut."
+    },
+    {
+      "roll": "assistant",
+      "text": "Okej, jag lyssnar."
+    },
+    {
+      "roll": "user",
+      "text": "Hon sa att det var ofarligt, men jag minns inte vem."
+    },
+    {
+      "roll": "assistant",
+      "text": "Noterat."
+    },
+    {
+      "roll": "user",
+      "text": "Tack för att du hjälper till."
+    },
+    {
+      "roll": "assistant",
+      "text": "Självklart."
+    }
+  ],
+  "ska_sparas": [],
+  "ska_ej_sparas": [
+    {
+      "amne": "vem/vad",
+      "skal": "oklar referent — spara inte vid osäkerhet"
+    }
+  ]
+}

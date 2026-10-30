@@ -1,17 +1,46 @@
 {
   "id": "u085-villkorlig",
   "kategori": "villkorlig",
-  "sprak": "sv",
+  "doman": "vardag",
+  "sprak": "en",
   "samtalsdatum": "2026-10-30",
   "meddelanden": [
     {
       "roll": "user",
-      "text": "Om jag får tid ska jag börja renovera köket."
+      "text": "Hi, I have a question."
+    },
+    {
+      "roll": "assistant",
+      "text": "Sure, go ahead."
+    },
+    {
+      "roll": "user",
+      "text": "It's nothing urgent."
+    },
+    {
+      "roll": "assistant",
+      "text": "Okay, I'm listening."
+    },
+    {
+      "roll": "user",
+      "text": "I'll join if it fits my schedule."
+    },
+    {
+      "roll": "assistant",
+      "text": "Noted."
+    },
+    {
+      "roll": "user",
+      "text": "Thanks for the help."
+    },
+    {
+      "roll": "assistant",
+      "text": "Of course."
     }
   ],
   "ska_sparas": [
     {
-      "citat": "Om jag får tid ska jag börja renovera köket",
+      "citat": "I'll join if it fits my schedule",
       "typ": "intention",
       "polaritet": "bekraftad",
       "modalitet": "avsedd",
@@ -21,8 +50,8 @@
   ],
   "ska_ej_sparas": [
     {
-      "amne": "villkoret bortklippt",
-      "skal": "villkoret är del av yttrandet och får inte tappas"
+      "amne": "condition dropped",
+      "skal": "condition is part of it"
     }
   ]
 }

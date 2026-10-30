@@ -1,0 +1,33 @@
+{
+  "id": "u014-assistentens-ord",
+  "kategori": "assistentens-ord",
+  "doman": "halsa",
+  "sprak": "en",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "I keep forgetting to take my pills."
+    },
+    {
+      "roll": "assistant",
+      "text": "Noted."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "I keep forgetting to take my pills",
+      "typ": "sjalvbild",
+      "polaritet": "bekraftad",
+      "modalitet": "faktisk",
+      "tid": null,
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": [
+    {
+      "amne": "a reminder plan",
+      "skal": "an assistant suggestion, not the user's words"
+    }
+  ]
+}

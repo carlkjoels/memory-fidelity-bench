@@ -1,28 +1,33 @@
 {
-  "id": "u059-relativ_tid",
+  "id": "u059-relativ-tid",
   "kategori": "relativ-tid",
-  "sprak": "en",
+  "doman": "halsa",
+  "sprak": "sv",
   "samtalsdatum": "2026-10-30",
   "meddelanden": [
     {
       "roll": "user",
-      "text": "The deadline is in three days."
+      "text": "Jag ska till sjukhuset på fredag."
+    },
+    {
+      "roll": "assistant",
+      "text": "Noterat."
     }
   ],
   "ska_sparas": [
     {
-      "citat": "The deadline is in three days",
-      "typ": "handelse",
+      "citat": "Jag ska till sjukhuset på fredag",
+      "typ": "intention",
       "polaritet": "bekraftad",
-      "modalitet": "faktisk",
-      "tid": "2026-11-02",
+      "modalitet": "avsedd",
+      "tid": "2026-10-31",
       "talare": "user"
     }
   ],
   "ska_ej_sparas": [
     {
-      "amne": "unresolved relative time",
-      "skal": "relative to 2026-10-30"
+      "amne": "ouppläst",
+      "skal": "nästa fredag = 2026-10-31"
     }
   ]
 }

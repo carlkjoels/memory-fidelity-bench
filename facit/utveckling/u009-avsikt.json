@@ -1,0 +1,33 @@
+{
+  "id": "u009-avsikt",
+  "kategori": "avsikt",
+  "doman": "vardag",
+  "sprak": "sv",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "Jag ska börja plugga spanska i höst."
+    },
+    {
+      "roll": "assistant",
+      "text": "Noterat."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "Jag ska börja plugga spanska",
+      "typ": "intention",
+      "polaritet": "bekraftad",
+      "modalitet": "avsedd",
+      "tid": null,
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": [
+    {
+      "amne": "pluggar redan spanska",
+      "skal": "avsedd"
+    }
+  ]
+}

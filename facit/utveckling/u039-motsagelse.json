@@ -1,0 +1,37 @@
+{
+  "id": "u039-motsagelse",
+  "kategori": "motsagelse",
+  "doman": "vardag",
+  "sprak": "sv",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "Jag bor i Göteborg."
+    },
+    {
+      "roll": "assistant",
+      "text": "Okej."
+    },
+    {
+      "roll": "user",
+      "text": "Förresten, jag flyttade till Malmö förra månaden."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "jag flyttade till Malmö förra månaden",
+      "typ": "handelse",
+      "polaritet": "bekraftad",
+      "modalitet": "faktisk",
+      "tid": null,
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": [
+    {
+      "amne": "bor i Göteborg",
+      "skal": "ny uppgift motsäger"
+    }
+  ]
+}

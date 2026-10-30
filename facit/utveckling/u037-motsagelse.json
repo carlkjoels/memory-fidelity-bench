@@ -1,0 +1,57 @@
+{
+  "id": "u037-motsagelse",
+  "kategori": "motsagelse",
+  "doman": "halsa",
+  "sprak": "sv",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "Jag tar 500 mg metformin."
+    },
+    {
+      "roll": "assistant",
+      "text": "Okej."
+    },
+    {
+      "roll": "user",
+      "text": "Det är inget akut."
+    },
+    {
+      "roll": "assistant",
+      "text": "Okej, jag lyssnar."
+    },
+    {
+      "roll": "user",
+      "text": "Förresten, läkaren höjde till 1000 mg förra veckan."
+    },
+    {
+      "roll": "assistant",
+      "text": "Noterat."
+    },
+    {
+      "roll": "user",
+      "text": "Tack för att du hjälper till."
+    },
+    {
+      "roll": "assistant",
+      "text": "Självklart."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "läkaren höjde till 1000 mg förra veckan",
+      "typ": "handelse",
+      "polaritet": "bekraftad",
+      "modalitet": "annans_rost",
+      "tid": null,
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": [
+    {
+      "amne": "500 mg som nuvarande dos",
+      "skal": "ALLVARLIGT FEL — dosen ändrades"
+    }
+  ]
+}

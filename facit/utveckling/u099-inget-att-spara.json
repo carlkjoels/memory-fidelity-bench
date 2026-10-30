@@ -1,0 +1,24 @@
+{
+  "id": "u099-inget-att-spara",
+  "kategori": "inget-att-spara",
+  "doman": "vardag",
+  "sprak": "sv",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "Hej, hur är läget?"
+    },
+    {
+      "roll": "assistant",
+      "text": "Noterat."
+    }
+  ],
+  "ska_sparas": [],
+  "ska_ej_sparas": [
+    {
+      "amne": "hälsning",
+      "skal": "inget sparbart"
+    }
+  ]
+}

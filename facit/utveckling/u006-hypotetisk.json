@@ -1,0 +1,24 @@
+{
+  "id": "u006-hypotetisk",
+  "kategori": "hypotetisk",
+  "doman": "vardag",
+  "sprak": "sv",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "Om jag vann på lotto skulle jag sluta jobba."
+    },
+    {
+      "roll": "assistant",
+      "text": "Noterat."
+    }
+  ],
+  "ska_sparas": [],
+  "ska_ej_sparas": [
+    {
+      "amne": "slutar jobba",
+      "skal": "hypotetiskt"
+    }
+  ]
+}

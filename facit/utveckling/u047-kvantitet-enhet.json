@@ -1,0 +1,33 @@
+{
+  "id": "u047-kvantitet-enhet",
+  "kategori": "kvantitet-enhet",
+  "doman": "halsa",
+  "sprak": "sv",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "Jag ska dricka minst två liter vatten om dagen enligt läkaren."
+    },
+    {
+      "roll": "assistant",
+      "text": "Noterat."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "Jag ska dricka minst två liter vatten om dagen",
+      "typ": "handelse",
+      "polaritet": "bekraftad",
+      "modalitet": "faktisk",
+      "tid": null,
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": [
+    {
+      "amne": "förvanskad mängd",
+      "skal": "mängd och enhet exakt"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "u012-annans-rost",
+  "kategori": "annans-rost",
+  "doman": "vardag",
+  "sprak": "sv",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "Min bror tycker att jag jobbar för mycket."
+    },
+    {
+      "roll": "assistant",
+      "text": "Noterat."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "Min bror tycker att jag jobbar för mycket",
+      "typ": "handelse",
+      "polaritet": "bekraftad",
+      "modalitet": "annans_rost",
+      "tid": null,
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": [
+    {
+      "amne": "användarens egen åsikt",
+      "skal": "annans ord"
+    }
+  ]
+}
