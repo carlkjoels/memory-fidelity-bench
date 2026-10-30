@@ -9,10 +9,14 @@ memory layer store what the user **actually said** — verbatim, with the right
 polarity, speaker, modality and time — and abstain from storing what it
 shouldn't?
 
-Fidelity, not recall. LongMemEval and LoCoMo ask whether a system can *retrieve*
-the right answer after thousands of messages. This asks something upstream:
-whether what was put into memory matches what was said at all. A system can have
-perfect recall of a corrupted memory.
+Storage fidelity. Most benchmarks score the final answer; **HaluMem already
+scores the stored layer**, so this is not first to do so. The contribution is
+narrower: each dimension scored separately (verbatimness, polarity, speaker,
+modality, time, recall), in Swedish and health-adjacent cases, vendor disclosed,
+with cases adapted from real user issues. It reports recall too — a system can
+be faithful about the little it stores and still omit most of what was said.
+Paraphrase is described, never counted as fabrication; otherwise the benchmark
+would rank design choices, not fidelity.
 
 **Status:** pre-registration (see `PREREGISTRERING.md`, locked 2026-10-30). No
 code run, no results, no systems installed yet. Everything is synthetic.

@@ -16,11 +16,20 @@ with the right polarity (negation preserved), the right speaker, the right
 modality (factual / intended / hypothetical) and the right time — and abstain
 from storing what it shouldn't?
 
-This is a fidelity benchmark, not a recall benchmark. LongMemEval and LoCoMo
-measure whether a system can *retrieve* the right answer after thousands of
-messages. We measure something upstream: whether what was placed in memory
-matches what was said at all. A system can have perfect recall of a corrupted
-memory entry.
+This is a fidelity benchmark. Most memory benchmarks (LongMemEval, LoCoMo,
+MemBench, MemoryAgentBench, STALE) score the final *answer*. **HaluMem is prior
+art that already scores the stored layer** — so this benchmark is not first to
+measure storage. Its contribution is narrower and specific: scoring each
+dimension separately (verbatimness, polarity, speaker, modality, time, recall),
+in Swedish and health-adjacent cases, with the vendor disclosed, and with test
+cases adapted from real user issues. We also report recall, because a system
+can be faithful about the little it stores and still omit most of what was said.
+
+**Conflict of interest (disclosed):** the author of this benchmark builds
+Selvra, an adjacent memory layer. Selvra's own memory layer will be tested under
+exactly these rules once it exists. This is an open, pre-registered benchmark —
+not a claim of neutrality. (We hold HaluMem, DolphinBench and vendor benchmarks
+to the same disclosure standard.)
 
 ## Systems and versions
 
@@ -62,14 +71,31 @@ run. The model is pinned in Phase 3 together with the system versions.
    deleted, overwritten, or are both kept? (recorded, not scored as an error in
    itself — we report the behaviour)
 
+## Verbatimness is a property, not an error (revised 2026-10-30, see changelog)
+
+Several memory layers paraphrase the user's words into "facts" by design. A
+measure that counted paraphrase as fabrication would score those systems ~100%
+wrong regardless of whether the content is faithful — the benchmark would then
+rank design choices, not fidelity, and the shutdown criterion below could never
+trigger. So:
+
+- **Verbatimness** (is the stored text an exact substring of a user message?) is
+  reported as a **descriptive per-system property**, never counted as an error.
+  A system that stores raw text and one that paraphrases are simply described as
+  such.
+- **Confabulation** (a serious error) is redefined: a stored entry whose content
+  is **not supported by any user message** in the ground truth. Checked
+  deterministically by substring first; where the text is a faithful paraphrase
+  (no verbatim match) an **entailment judge** decides, validated against
+  hand-labelled cases. This is the HaluMem approach, but scored per dimension.
+
 ## Serious errors (the ones that make a memory dangerous)
 
 - **Negation flipped:** polarity inverted against the ground truth.
 - **Someone else's words as the user's:** speaker wrong in a way that attributes
   to the user something they did not say.
-- **Fabricated content:** a stored entry whose quote is not a substring of the
-  conversation (confabulation).
-
+- **Confabulation:** stored content not supported by any user message (per the
+  entailment-aware definition above — not mere paraphrase).
 - **Wrong medication, dose or allergy:** in a health context, a stored entry
   that names the wrong drug, the wrong dose, or inverts an allergy
   ("allergic to penicillin" stored as tolerated, or vice versa). A fidelity
@@ -80,20 +106,37 @@ as serious.
 
 ## Scoring
 
-- Quote and abstention: deterministic (exact substring, set comparison against
-  ground truth).
-- Polarity, speaker, modality, time: deterministic where the ground truth is
-  unambiguous; **an LLM judge only where it must be used**, and then checked
-  against hand-labelled cases (the judge is never the same model the memory
-  layer uses, and its agreement with the hand labels is reported).
+- Verbatimness and abstention: deterministic (substring check; set comparison
+  against ground truth).
+- Confabulation, polarity, speaker, modality, time: deterministic where the
+  ground truth is unambiguous; **an LLM judge only where it must be used**
+  (paraphrase/entailment), and then checked against hand-labelled cases (the
+  judge is never the same model the memory layer uses, and its agreement with
+  the hand labels is reported).
+- **Omission / recall:** for every item the ground truth says should be stored,
+  did the system store something that entails it? Reported as recall. A system
+  that stores little scores low here even if what it stores is faithful.
+- **Every measure is also reported per domain** (health vs everyday) and, where
+  it matters, per category.
 
-## Thresholds and shutdown criterion (locked 2026-10-30)
+## Thresholds and shutdown criterion (revised 2026-10-30, see changelog)
 
-- **Shutdown:** if ALL four systems have **under 1% serious errors** on the
-  hidden set, there is no story — the project is shut down and reported as a
-  null result. Written in advance.
-- A system is deemed to "have a fidelity problem" at ≥ 1% serious errors.
-- Minor errors have no threshold; they are described, not judged.
+Two failure modes, both reported:
+
+- **Serious-error rate** per system (negation flip, speaker-as-user,
+  confabulation, wrong med/dose/allergy) — paraphrase is NOT in this set.
+- **Recall** per system against `ska_sparas`.
+
+Denominators are stated explicitly and reported side by side: serious-error rate
+is **per stored entry** and **per ground-truth item** (a system is matched
+one-to-many where it splits an utterance into several entries); recall is **per
+ground-truth item**.
+
+- A system "has a fidelity problem" at **≥ 1% serious errors** OR materially low
+  recall (threshold fixed in Phase 3 against the no-op and raw-store baselines).
+- **Shutdown / null result:** declared only if ALL systems are clean on serious
+  errors **and** none shows a recall problem — so a system that stores nothing
+  cannot produce a null result, because it fails on recall. Written in advance.
 
 ## Test data (Phase 2)
 
@@ -134,12 +177,15 @@ numbers.
 
 ## Rules
 
-- No results are published before a comment week for Mem0 and Vectorize (the
-  system authors get to respond before publication — responsible disclosure).
+- No results are published before a comment week for ALL evaluated systems'
+  authors — Mem0, Vectorize (Hindsight), Zep (Graphiti) and Letta — not only the
+  two originally named. They respond before publication (responsible disclosure).
 - Tone: dry and factual. Findings, not judgements. No superlatives, no rankings
   without confidence intervals.
-- Everything synthetic. No real-person data, no Selvra history. The only
-  private artefact is hidden set v2 before its single run; its manifest is public.
+- Everything synthetic. No REAL health data, no real-person data, no Selvra
+  history. Synthetic health-adjacent cases ("the doctor said…") are part of the
+  contribution. The only private artefact is hidden set v2 before its single
+  run; its manifest is public.
 
 ## Changelog
 
@@ -177,3 +223,27 @@ numbers.
   rework permitted and logged): ~35 short cases converted to 6–12-message
   conversations with the key statement mid-conversation; health woven in to the
   2/3 ratio; the generator remains the single reproducible source.
+- 2026-10-30: **External review acted on (validity fixes).** (a) Verbatimness is
+  now a descriptive property, never an error; confabulation redefined as content
+  not supported by any user message (substring, then entailment judge) — so the
+  bench measures fidelity, not design choice. (b) Added a recall/omission
+  measure against `ska_sparas` with explicit denominators. (c) Shutdown
+  criterion rewritten so it can trigger and a store-nothing system cannot pass
+  (it fails on recall). (d) Novelty stated against HaluMem, not as "first".
+  (e) Comment week extended to all four systems' authors. (f) Conflict of
+  interest (Selvra) disclosed in the preregistration. (g) "No health data" →
+  "no REAL health data".
+- 2026-10-30: **Deferred to before Phase 3 (planned, not yet built), logged so
+  they are not silent):** multi-session schema with per-message time and a
+  per-session expected-state (for contradiction/supersede cases); backdated and
+  varied `samtalsdatum` injected via each system's own time API; locked
+  per-system modes and baselines (Mem0 infer=True/False, Hindsight
+  standard/verbatim, a raw-store no-op baseline, a Letta variant with a fixed
+  agent prompt, possibly LangMem); a speaker rule (assistant content correctly
+  attributed is not a serious error; assistant content phrased as the user's own
+  claim is); and a SEPARATE frozen set (dold-B, own manifest) for test cases
+  adapted from real public issues — the existing 50 hidden files stay untouched.
+  NOTE: claims in the external review about other systems' internals (commits,
+  issue numbers, line references) are NOT encoded here as fact; they are the
+  reviewer's, unverified by this project, and are only used to motivate case
+  *shapes* — never asserted as another system's behaviour in public output.

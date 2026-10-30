@@ -30,5 +30,8 @@ be stored, ska_ej_sparas = should not be stored, citat = quote, skal = reason).
 }
 ```
 
-`citat` is ALWAYS an exact substring — an entry whose quote does not appear
-verbatim in the conversation is, by definition, confabulation (a serious error).
+`citat` in the ground truth is ALWAYS an exact substring (otherwise the ground
+truth itself would be fabrication). Note for scoring: a *system's* stored entry
+is NOT penalised merely for paraphrasing — verbatimness is reported descriptively.
+Confabulation (a serious error) means stored content not supported by any user
+message (substring check first, entailment judge otherwise). See PREREGISTRERING.md.
