@@ -74,7 +74,7 @@ for cit in ["I'm going to start journaling", "I plan to run a marathon next year
 
 # --- annans_röst (6) ---
 for cit in ["Min chef sa att jag borde delegera mer",
-            "Pappa tycker att jag jobbar för mycket",
+            "Min bror tycker att jag jobbar för mycket",
             "En kollega sa att projektet är försenat"]:
     lagg("annans_röst", "sv", [U(cit + ".")],
          [post(cit, "handelse", "bekraftad", "annans_rost")],
