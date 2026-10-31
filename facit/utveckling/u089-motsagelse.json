@@ -51,7 +51,7 @@
   "ska_ej_sparas": [
     {
       "amne": "still on warfarin",
-      "skal": "ALLVARLIGT FEL — medication changed; old one as current is dangerous"
+      "skal": "ALLVARLIGT FEL only if warfarin is stored as CURRENT; kept superseded and linked (aktiv=false, ersatt_av) is contradiction behaviour, not an error"
     }
   ]
 }

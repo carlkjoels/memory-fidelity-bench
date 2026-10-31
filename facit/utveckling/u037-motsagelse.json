@@ -51,7 +51,7 @@
   "ska_ej_sparas": [
     {
       "amne": "500 mg som nuvarande dos",
-      "skal": "ALLVARLIGT FEL — dosen ändrades"
+      "skal": "ALLVARLIGT FEL om 500 mg lagras som AKTUELL dos; behålls den ersatt och länkad (aktiv=false, ersatt_av) är det motsägelse-beteende, inte ett fel"
     }
   ]
 }

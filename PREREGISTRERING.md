@@ -104,6 +104,23 @@ trigger. So:
 Minor errors (modality or time nuance) are reported separately and never counted
 as serious.
 
+## Superseded values: a serious error only if stored as current (revised 2026-10-31, see changelog)
+
+When a later message supersedes or corrects an earlier one (categories
+`motsagelse` and `korrigering`), the `ska_ej_sparas` entry names the OLD value.
+It is a **serious error only if the system presents it as current/active**. A
+system that keeps the old value but marks it superseded and linked — dumped with
+`aktiv: false` and `ersatt_av` — is **recorded in the contradiction taxonomy
+("keeps both, linked"), not scored as a serious error.** This is the behaviour of
+Graphiti (edge invalidation) and Mem0's graph variant (linked memories), not only
+Selvra; the rule is general, stated so no single system is advantaged by it.
+
+Consequently: to be scored on the **active view**, an adapter MUST dump each
+entry with `aktiv` and `ersatt_av`. A system that cannot express "superseded" is
+scored on everything it returns as current — keeping a replaced value visible as
+current is then exactly the serious error that matters (see Mem0 issue reports of
+replaced values still retrieved as current).
+
 ## Scoring
 
 - Verbatimness and abstention: deterministic (substring check; set comparison
@@ -116,6 +133,15 @@ as serious.
 - **Omission / recall:** for every item the ground truth says should be stored,
   did the system store something that entails it? Reported as recall. A system
   that stores little scores low here even if what it stores is faithful.
+- **Matching (entry → ground-truth item):** an entry matches a `ska_sparas` item
+  if it **contains or entails** it — never by exact-string equality. The ground
+  truth may quote a short span ("tre gånger") while a faithful system stores the
+  whole clause ("Jag tar tabletten tre gånger"); one ground-truth item may be
+  satisfied by one entry (one-to-many). Containment is checked first, the
+  entailment judge only where there is no verbatim overlap.
+- **Role `third`:** a message spoken by a third party (`roll: "third"`) can never
+  yield a `sagt`/user entry. Storing a `third` message as the user's own is the
+  speaker serious error, the same as assistant content phrased as the user's.
 - **Every measure is also reported per domain** (health vs everyday) and, where
   it matters, per category.
 
@@ -137,15 +163,24 @@ ground-truth item**.
 - **Shutdown / null result:** declared only if ALL systems are clean on serious
   errors **and** none shows a recall problem — so a system that stores nothing
   cannot produce a null result, because it fails on recall. Written in advance.
+- **A clean run is an upper bound, never a guarantee (added 2026-10-31).** With
+  the hidden set's size (50 conversations, a few ground-truth items each), zero
+  observed serious errors is reported as *"none observed; upper 95% bound X%"*
+  (Wilson, or the rule of three: ≈3/n), **never** as "< 1%". Showing a serious-
+  error rate below 1% at 95% confidence needs roughly **300 error-free items**.
+  The hidden set can therefore *fail* a system (one error among ~100 entries is
+  already ≥1%) but cannot statistically *acquit* one. Result text says "none
+  observed" with the bound, not a point claim.
 
 ## Test data (Phase 2)
 
-150 synthetic conversations, Swedish and English, 17 categories (see
+151 synthetic conversations, Swedish and English, 17 categories (see
 `facit/KATEGORIER.md`). Each conversation has ground truth in JSON: exactly what
 should be stored and what should not.
 
-- **Development:** 100 conversations (`facit/utveckling/`), open, used to build
-  and debug the rig.
+- **Development:** 101 conversations (`facit/utveckling/`), open, used to build
+  and debug the rig. (Was 100; one `third`-role case added 2026-10-31, see
+  changelog.)
 - **Hidden (v2):** 50 conversations authored by an external person, kept in a
   **private path outside this repo**. Only the SHA-256 manifest
   (`DOLD_MANIFEST_V2.sha256`) is committed publicly, in advance; the
@@ -247,3 +282,18 @@ numbers.
   issue numbers, line references) are NOT encoded here as fact; they are the
   reviewer's, unverified by this project, and are only used to motivate case
   *shapes* — never asserted as another system's behaviour in public output.
+- 2026-10-31: **Superseded-value scoring made explicit, matching stated, clean
+  run reported as a bound.** (a) A `ska_ej_sparas` entry in `motsagelse` and
+  `korrigering` is a serious error **only if stored as current/active**; a value
+  kept superseded and linked (`aktiv=false`, `ersatt_av`) is logged in the
+  contradiction taxonomy, not scored as a serious error. u037 and u040 reworded
+  to this conditional form (generator + regenerated facit). (b) Entry→ground-
+  truth matching is **contains/entails**, not exact equality. (c) Role `third`
+  can never become a `sagt`/user entry; a `third`-role development case added
+  (set 100 → 101, within u001–u101). (d) A clean hidden-set run is reported as
+  an upper 95% bound ("none observed"), never "< 1%": the set can fail but not
+  acquit. This change **advantages every link/invalidate system (Graphiti,
+  Mem0's graph variant), not only Selvra** — motivated generally and stated with
+  the conflict of interest. **Locked 2026-10-31, before any system is run.**
+  **Status: awaiting external read before it is treated as binding** (the author
+  builds Selvra and benefits from this change; an outside reader checks it first).

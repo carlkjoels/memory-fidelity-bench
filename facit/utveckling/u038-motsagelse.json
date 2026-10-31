@@ -51,7 +51,7 @@
   "ska_ej_sparas": [
     {
       "amne": "allergic to latex",
-      "skal": "ALLVARLIGT FEL — superseded; old allergy as current is dangerous"
+      "skal": "ALLVARLIGT FEL only if the latex allergy is stored as CURRENT; kept superseded and linked (aktiv=false, ersatt_av) is contradiction behaviour, not an error"
     }
   ]
 }

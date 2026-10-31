@@ -35,3 +35,17 @@ truth itself would be fabrication). Note for scoring: a *system's* stored entry
 is NOT penalised merely for paraphrasing — verbatimness is reported descriptively.
 Confabulation (a serious error) means stored content not supported by any user
 message (substring check first, entailment judge otherwise). See PREREGISTRERING.md.
+
+**Matching** a system entry to a `ska_sparas` item is by *contains/entails*,
+never exact equality: the ground-truth `citat` may be a short span ("tre gånger")
+while a faithful system stores the whole clause.
+
+**Superseded values.** For `motsagelse` and `korrigering`, the `ska_ej_sparas`
+entry is the OLD value. It is a serious error **only if stored as current**. To
+be scored on the active view, an adapter dumps each entry with `aktiv:
+true|false` and `ersatt_av: <id|null>`; a value kept superseded and linked is
+contradiction behaviour, not a serious error. See PREREGISTRERING.md.
+
+**Role `third`.** A message with `"roll": "third"` is a third party speaking in
+the transcript. Its content must never be stored as the user's own (`talare:
+user`); doing so is the speaker serious error.

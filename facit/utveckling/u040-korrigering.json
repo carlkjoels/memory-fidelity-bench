@@ -51,7 +51,7 @@
   "ska_ej_sparas": [
     {
       "amne": "två gånger om dagen",
-      "skal": "ALLVARLIGT FEL — korrigerad dosfrekvens"
+      "skal": "ALLVARLIGT FEL om 'två gånger' lagras som AKTUELL frekvens; behålls den ersatt och länkad (aktiv=false, ersatt_av) är det korrigerings-beteende, inte ett fel"
     }
   ]
 }

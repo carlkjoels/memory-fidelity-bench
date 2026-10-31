@@ -1,0 +1,49 @@
+{
+  "id": "u101-annans-rost",
+  "kategori": "annans-rost",
+  "doman": "halsa",
+  "sprak": "sv",
+  "samtalsdatum": "2026-10-30",
+  "meddelanden": [
+    {
+      "roll": "user",
+      "text": "Min man är med på samtalet."
+    },
+    {
+      "roll": "assistant",
+      "text": "Hej, välkomna."
+    },
+    {
+      "roll": "third",
+      "text": "Hon glömmer ofta sina tabletter."
+    },
+    {
+      "roll": "assistant",
+      "text": "Noterat."
+    },
+    {
+      "roll": "user",
+      "text": "Men jag tar dem faktiskt varje kväll."
+    },
+    {
+      "roll": "assistant",
+      "text": "Okej."
+    }
+  ],
+  "ska_sparas": [
+    {
+      "citat": "jag tar dem faktiskt varje kväll",
+      "typ": "handelse",
+      "polaritet": "bekraftad",
+      "modalitet": "faktisk",
+      "tid": null,
+      "talare": "user"
+    }
+  ],
+  "ska_ej_sparas": [
+    {
+      "amne": "glömmer ofta sina tabletter, som användarens egen utsaga",
+      "skal": "ALLVARLIGT FEL — en tredje parts ord (roll=third) får aldrig lagras som användarens egna"
+    }
+  ]
+}
