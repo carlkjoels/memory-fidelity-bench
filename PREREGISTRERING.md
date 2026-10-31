@@ -36,12 +36,12 @@ to the same disclosure standard.)
 Four self-hosted, open memory layers. No cloud service. Licence is verified and
 recorded in the README before the adapter is built.
 
-| system | licence (to verify) | version |
+| system | licence (verified 2026-10-31, GitHub license API) | version |
 |---|---|---|
-| Mem0 (OSS) | Apache-2.0 (verify) | **pinned in Phase 3, logged per run** |
-| Hindsight | MIT (verify) | pinned in Phase 3 |
-| Graphiti | verify | pinned in Phase 3 |
-| Letta | verify | pinned in Phase 3 |
+| Mem0 (OSS) | Apache-2.0 ✓ | **pinned in Phase 3, logged per run** |
+| Hindsight | MIT ✓ | pinned in Phase 3 |
+| Graphiti | Apache-2.0 ✓ | pinned in Phase 3 |
+| Letta | Apache-2.0 ✓ | pinned in Phase 3 |
 
 Versions cannot be pinned today without installing the systems. Therefore: the
 exact version, commit hash and configuration are **frozen and committed in
@@ -297,3 +297,6 @@ numbers.
   the conflict of interest. **Locked 2026-10-31, before any system is run.**
   **Status: awaiting external read before it is treated as binding** (the author
   builds Selvra and benefits from this change; an outside reader checks it first).
+- 2026-10-31: Licences verified via the GitHub license API and recorded in the
+  systems table: Mem0 Apache-2.0, Hindsight MIT, Graphiti Apache-2.0, Letta
+  Apache-2.0 — all permissive OSS, all self-hostable.
